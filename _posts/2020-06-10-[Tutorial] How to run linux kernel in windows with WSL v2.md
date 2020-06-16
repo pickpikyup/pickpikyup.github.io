@@ -59,7 +59,7 @@ Good luck !
 > wikipedia : [WSL](https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux)  
 
 
-![Image of WSL](img/WSL-2-Architecture.jpg)
+![Image of WSL](../img/WSL-2-Architecture.jpg)
 
 Intuitively, the WSL2 is a lightweight Linux Vitual Machine based on the Hypervisor, same as Windows. 
 
@@ -87,7 +87,7 @@ Open Run :  win + R
 type : winver  
 select : OK
 ```
-![Image of Windows_version](img/win_version.PNG)
+![Image of Windows_version](../img/win_version.PNG)
 
 if Windows 10 version is lower than version 2004, Build 19041.
 - Use [Get Windows Update Assitant](https://www.microsoft.com/software-download/windows10)
@@ -97,7 +97,7 @@ if Windows 10 version is lower than version 2004, Build 19041.
 
 Go to windows setup, and turn on the Developer Mode 
 
-![Image of dev_mode](img/dev_mode.PNG)
+![Image of dev_mode](../img/dev_mode.PNG)
 
 It will take a couple of time.  Don't worry! 
 
@@ -129,7 +129,7 @@ wsl --set-default-version 2
 
 Choice what u want and install it! 
 
-![MS store](img/win_store.PNG)
+![MS store](../img/win_store.PNG)
 
 
 **PS** : Then, Initialize the distro,  if u want some helps:
@@ -137,7 +137,7 @@ Choice what u want and install it!
 
 When Linux Distro installed successfully, you will see it:
 
-![ubuntu](img/ubuntu.PNG)
+![ubuntu](../img/ubuntu.PNG)
 
 ## Tutorial 2 : Set up Data Science Environment in WSL2
 
@@ -170,15 +170,15 @@ With the Remote-WSL extension, we can get into the Linux SubSystem and work on i
 
 Click Here and connect to your WSL2 in a New Windows
 
-![VS code](img/Remote_WSL.PNG)
+![VS code](../img/Remote_WSL.PNG)
 
 If connection goes well, you will see
 
-![VS code](img/Remote_WSL2.PNG)
+![VS code](../img/Remote_WSL2.PNG)
 
 Then re-install those Extensions in your WSL
 
-![VS code](img/VS_code.PNG)
+![VS code](../img/VS_code.PNG)
 
 **Congratulations, your Linux Env is ready for you !**
 
