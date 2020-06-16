@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      [Tutorial] How to run linux kernel in windows with WSL v2
-subtitle:   Data Science Linux Environement Setup in Windows10  
+title:      "[Tutorial] How to run linux kernel in windows with WSL v2"
+subtitle:   "Data Science Linux Environement Setup in Windows10"  
 date:       2020-06-10
 author:     Mr.X
 header-img: img/post-bg-wsl.jpg
@@ -14,7 +14,7 @@ tags:
     - english
 ---
 
-# DataScience in windows 10
+## DataScience in windows 10
 
 Dear Data Scientist, 
 
@@ -38,21 +38,21 @@ Good luck !
 ## Table of Content
 
 - [DataScience in windows 10](#datascience-in-windows-10)
-  - [Table of Content](#table-of-content)
-  - [What is this WSL ?](#what-is-this-wsl-)
-  - [Tutorial 1 : Get your WSL2 and install Linux distribution](#tutorial-1--get-your-wsl2-and-install-linux-distribution)
-    - [1. Update Windows 10](#1-update-windows-10)
-    - [2. Install and Set WSL-2](#2-install-and-set-wsl-2)
-    - [3. Install Linux Distribution from Microsoft Store](#3-install-linux-distribution-from-microsoft-store)
-  - [Tutorial 2 : Set up Data Science Environment in WSL2](#tutorial-2--set-up-data-science-environment-in-wsl2)
-    - [1. Configuration for WSL](#1-configuration-for-wsl)
-    - [2. Configuration for Windows 10](#2-configuration-for-windows-10)
-      - [Download VS code in Windows 10](#download-vs-code-in-windows-10)
-      - [Configure Extension for WSL in VS code](#configure-extension-for-wsl-in-vs-code)
-  - [Tutorial 3 : Best Terminal (Option)](#tutorial-3--best-terminal-option)
-  - [Tutorial 4 : Work with git and ssh (Option)](#tutorial-4--work-with-git-and-ssh-option)
-  - [TODO list](#todo-list)
-  - [Some Links](#some-links)
+- [Table of Content](#table-of-content)
+- [What is this WSL ?](#what-is-this-wsl-)
+- [Tutorial 1 : Get your WSL2 and install Linux distribution](#tutorial-1--get-your-wsl2-and-install-linux-distribution)
+  - [1. Update Windows 10](#1-update-windows-10)
+  - [2. Install and Set WSL-2](#2-install-and-set-wsl-2)
+  - [3. Install Linux Distribution from Microsoft Store](#3-install-linux-distribution-from-microsoft-store)
+- [Tutorial 2 : Set up Data Science Environment in WSL2](#tutorial-2--set-up-data-science-environment-in-wsl2)
+  - [1. Configuration for WSL](#1-configuration-for-wsl)
+  - [2. Configuration for Windows 10](#2-configuration-for-windows-10)
+    - [Download VS code in Windows 10](#download-vs-code-in-windows-10)
+    - [Configure Extension for WSL in VS code](#configure-extension-for-wsl-in-vs-code)
+- [Tutorial 3 : Best Terminal (Option)](#tutorial-3--best-terminal-option)
+- [Tutorial 4 : Work with git and ssh (Option)](#tutorial-4--work-with-git-and-ssh-option)
+- [TODO list](#todo-list)
+- [Some Links](#some-links)
 
 
 ## What is this WSL ?
