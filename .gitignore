@@ -38,5 +38,7 @@ Temporary Items
 _site
 
 # Backup files
-
 _backup.txt
+
+# Ignore drafts
+_drafts
