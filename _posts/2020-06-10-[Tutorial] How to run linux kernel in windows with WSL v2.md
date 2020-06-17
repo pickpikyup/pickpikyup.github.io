@@ -3,7 +3,7 @@ layout:     post
 title:      "[Tutorial] How to run linux kernel in windows with WSL v2"
 subtitle:   "Data Science Linux Environement Setup in Windows10"  
 date:       2020-06-10
-author:     Mr.X
+author:     Mr.X | X师傅
 header-img: img/post-bg-wsl.jpg
 catalog: true
 tags:
