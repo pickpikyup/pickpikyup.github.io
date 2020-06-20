@@ -1,6 +1,6 @@
 # Site settings
-title: X's Blog
-SEOTitle: X师傅的博客 | X's Blog
+title: X Blog
+SEOTitle: X师傅的博客 | X Blog
 header-img: img/post-bg-hacker.jpg
 email: xhuang_olala@163.com
 description: "Hi, 陌生人, 好久不见"
@@ -31,7 +31,7 @@ linkedin_username: xuanqi-huang-599a62140
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 permalink: pretty
-paginate: 10
+paginate: 2
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
