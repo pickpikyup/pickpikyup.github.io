@@ -1,13 +1,13 @@
 {
   "name": "X师傅的Blog",
   "short_name": "X's Blog",
-  "description": "This Blog is holden by Mr.X, an AI Algorithm Engineer",
+  "description": "This Blog is holden by Mr.X, AI Algorithm Engineer",
   "icons": [{
-    "src": "icons/pwa_icon_144.png",
+    "src": "icons/pwa-icon-144.png",
     "sizes": "144x144",
     "type": "image/png"
   }, {
-    "src": "icons/pwa_icon_310.png",
+    "src": "icons/pwa-icon-310.png",
     "sizes": "310x310",
     "type": "image/png"
   }],
