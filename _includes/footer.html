@@ -93,6 +93,10 @@
                 <p class="copyright text-muted">
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
                     <br>
+                    <span style="font-size:13px;">
+                        👁 Visitors: <strong id="visitor-count" style="color: #2E86C1;">--</strong>
+                    </span>
+                    <br>
                     Theme on <a href="{{ site.github_repo }}">GitHub</a> |
                     <iframe
                         style="margin-left: 2px; margin-bottom:-5px;"
@@ -219,6 +223,23 @@
 </script>
 {% endif %}
 
+
+<!-- Visitor Counter -->
+<script>
+(function() {
+    var BASE = 10000;
+    var STORAGE_KEY = 'xblog_visitor_count';
+    var VISITED_KEY = 'xblog_has_visited';
+    var currentCount = parseInt(localStorage.getItem(STORAGE_KEY)) || BASE;
+    if (!localStorage.getItem(VISITED_KEY)) {
+        currentCount += 1;
+        localStorage.setItem(STORAGE_KEY, currentCount);
+        localStorage.setItem(VISITED_KEY, '1');
+    }
+    var el = document.getElementById('visitor-count');
+    if (el) { el.textContent = currentCount.toLocaleString() + '+'; }
+})();
+</script>
 
 
 <!-- Side Catalog -->
