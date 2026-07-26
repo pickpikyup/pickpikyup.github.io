@@ -24,6 +24,11 @@
                         <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                     </li>
                     {% endif %}{% endfor %}
+                    <!-- Language Switcher -->
+                    <li class="nav-lang-divider">|</li>
+                    <li><a href="javascript:void(0)" onclick="switchLang('zh-CN')" class="lang-btn active" id="lang-zh">中文</a></li>
+                    <li><a href="javascript:void(0)" onclick="switchLang('en')" class="lang-btn" id="lang-en">EN</a></li>
+                    <li><a href="javascript:void(0)" onclick="switchLang('fr')" class="lang-btn" id="lang-fr">FR</a></li>
                 </ul>
             </div>
         </div>

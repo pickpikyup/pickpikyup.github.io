@@ -242,6 +242,71 @@
 </script>
 
 
+<!-- Language Switcher Styles -->
+<style>
+.nav-lang-divider { color: #666; padding: 15px 2px !important; font-size: 14px; pointer-events: none; }
+.lang-btn { font-size: 12px !important; padding: 15px 8px !important; opacity: 0.55; transition: opacity 0.2s; }
+.lang-btn:hover { opacity: 0.85; }
+.lang-btn.active { opacity: 1; font-weight: 700; }
+@media (max-width: 767px) {
+    .nav-lang-divider { display: none; }
+    .lang-btn { padding: 10px 8px !important; }
+}
+</style>
+
+<!-- Hidden Google Translate -->
+<div id="google_translate_element" style="display:none;"></div>
+
+<script>
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'zh-CN',
+        includedLanguages: 'zh-CN,en,fr',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+    }, 'google_translate_element');
+}
+
+function switchLang(lang) {
+    var select = document.querySelector('.goog-te-combo');
+    if (select) {
+        select.value = lang;
+        select.dispatchEvent(new Event('change'));
+    }
+    try { localStorage.setItem('blog_lang', lang); } catch(e) {}
+    document.querySelectorAll('.lang-btn').forEach(function(b) { b.classList.remove('active'); });
+    var btn = document.getElementById('lang-' + (lang === 'zh-CN' ? 'zh' : lang));
+    if (btn) btn.classList.add('active');
+}
+
+(function() {
+    var saved = null;
+    try { saved = localStorage.getItem('blog_lang'); } catch(e) {}
+    if (!saved) {
+        var navLang = navigator.language || '';
+        if (navLang.startsWith('en')) saved = 'en';
+        else if (navLang.startsWith('fr')) saved = 'fr';
+    }
+    if (saved && saved !== 'zh-CN') {
+        var retries = 0;
+        var interval = setInterval(function() {
+            var select = document.querySelector('.goog-te-combo');
+            if (select) {
+                clearInterval(interval);
+                select.value = saved;
+                select.dispatchEvent(new Event('change'));
+                document.querySelectorAll('.lang-btn').forEach(function(b) { b.classList.remove('active'); });
+                var btn = document.getElementById('lang-' + saved);
+                if (btn) btn.classList.add('active');
+            }
+            if (++retries > 30) clearInterval(interval);
+        }, 200);
+    }
+})();
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
 <!-- Side Catalog -->
 {% if page.catalog %}
 <script type="text/javascript">
