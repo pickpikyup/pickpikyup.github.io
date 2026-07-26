@@ -245,104 +245,56 @@
 <!-- Language Switcher Styles -->
 <style>
 .nav-lang-divider { color: #666; padding: 15px 2px !important; font-size: 14px; pointer-events: none; }
-.lang-btn { font-size: 12px !important; padding: 15px 8px !important; opacity: 0.55; transition: opacity 0.2s; }
+.lang-btn { font-size: 12px !important; padding: 15px 8px !important; opacity: 0.55; transition: opacity 0.2s; cursor: pointer; }
 .lang-btn:hover { opacity: 0.85; }
 .lang-btn.active { opacity: 1; font-weight: 700; }
 @media (max-width: 767px) {
     .nav-lang-divider { display: none; }
     .lang-btn { padding: 10px 8px !important; }
 }
-</style>
 
-<!-- Hidden Google Translate -->
-<div id="google_translate_element" style="display:none;"></div>
+/* Translation notice */
+.lang-notice { display: none; background: #fff3cd; color: #856404; text-align: center; padding: 6px 12px; font-size: 13px; border-bottom: 1px solid #ffc107; }
+html.lang-en .lang-notice, html.lang-fr .lang-notice { display: block; }
+
+/* About page language divs */
+.zh, .en, .fr { display: none; }
+html.lang-zh .zh { display: block; }
+html.lang-en .en { display: block; }
+html.lang-fr .fr { display: block; }
+</style>
 
 <script>
 (function() {
-    var GT_TIMEOUT = 8000;
-    var gtLoaded = false;
-    var gtFailed = false;
+    var LANG_KEY = 'blog_lang';
+    var current = 'zh-CN';
 
-    function hideLangBtns() {
-        var els = document.querySelectorAll('.lang-btn, .nav-lang-divider');
-        for (var i = 0; i < els.length; i++) { els[i].style.display = 'none'; }
+    try {
+        var saved = localStorage.getItem(LANG_KEY);
+        if (saved === 'en' || saved === 'fr') current = saved;
+    } catch(e) {}
+
+    if (current === 'zh-CN') {
+        var n = navigator.language || '';
+        if (n.startsWith('en')) current = 'en';
+        else if (n.startsWith('fr')) current = 'fr';
     }
 
-    window.googleTranslateElementInit = function() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'zh-CN',
-            includedLanguages: 'zh-CN,en,fr',
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-            autoDisplay: false
-        }, 'google_translate_element');
-        gtLoaded = true;
-    };
-
-    window.switchLang = function(lang) {
-        if (gtFailed) return;
-        var select = document.querySelector('.goog-te-combo');
-
-        if (select) {
-            select.value = lang;
-            select.dispatchEvent(new Event('change'));
-        } else if (!gtLoaded) {
-            var retries = 0;
-            var retry = setInterval(function() {
-                select = document.querySelector('.goog-te-combo');
-                if (select) {
-                    clearInterval(retry);
-                    select.value = lang;
-                    select.dispatchEvent(new Event('change'));
-                }
-                if (gtFailed || ++retries > 15) {
-                    clearInterval(retry);
-                    if (!select) hideLangBtns();
-                }
-            }, 200);
-        } else {
-            hideLangBtns();
-            return;
-        }
-
-        try { localStorage.setItem('blog_lang', lang); } catch(e) {}
+    function apply(lang) {
+        current = lang;
+        try { localStorage.setItem(LANG_KEY, lang); } catch(e) {}
+        var id = lang === 'zh-CN' ? 'zh' : lang;
         document.querySelectorAll('.lang-btn').forEach(function(b) { b.classList.remove('active'); });
-        var btn = document.getElementById('lang-' + (lang === 'zh-CN' ? 'zh' : lang));
+        var btn = document.getElementById('lang-' + id);
         if (btn) btn.classList.add('active');
-    };
+        document.documentElement.className = 'lang-' + lang;
+        window.dispatchEvent(new CustomEvent('langchange', { detail: { lang: lang } }));
+    }
 
-    // Timeout: if GT doesn't load in 8s, gracefully hide the buttons
-    setTimeout(function() {
-        if (!gtLoaded) { gtFailed = true; hideLangBtns(); }
-    }, GT_TIMEOUT);
-
-    // Auto-restore saved language
-    (function() {
-        var saved = null;
-        try { saved = localStorage.getItem('blog_lang'); } catch(e) {}
-        if (!saved) {
-            var navLang = navigator.language || '';
-            if (navLang.startsWith('en')) saved = 'en';
-            else if (navLang.startsWith('fr')) saved = 'fr';
-        }
-        if (saved && saved !== 'zh-CN') {
-            var retries = 0;
-            var interval = setInterval(function() {
-                var s = document.querySelector('.goog-te-combo');
-                if (s) {
-                    clearInterval(interval);
-                    s.value = saved;
-                    s.dispatchEvent(new Event('change'));
-                    document.querySelectorAll('.lang-btn').forEach(function(b) { b.classList.remove('active'); });
-                    var btn = document.getElementById('lang-' + saved);
-                    if (btn) btn.classList.add('active');
-                }
-                if (gtFailed || ++retries > 30) clearInterval(interval);
-            }, 200);
-        }
-    })();
+    window.switchLang = apply;
+    apply(current);
 })();
 </script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
 <!-- Side Catalog -->

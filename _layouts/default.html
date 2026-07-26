@@ -8,6 +8,13 @@
 
     {% include nav.html %}
 
+    {% unless page.url == '/about/' %}
+    <div class="lang-notice">
+        This page hasn't been translated yet. Showing original Chinese content.
+        <a href="javascript:void(0)" onclick="switchLang('zh-CN')" style="color:#856404;text-decoration:underline;margin-left:8px;">Switch to 中文</a>
+    </div>
+    {% endunless %}
+
     {{ content }}
 
     {% include footer.html %}

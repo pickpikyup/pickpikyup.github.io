@@ -53,7 +53,7 @@ header-img: "img/home-bg.jpg"
 </div>
 
 <!-- English Version -->
-<div class="en post-container" style="display:none;">
+<div class="en post-container">
     <blockquote><p>Focus on the work, treat people with sincerity.</p></blockquote>
 
     <p>Hello / Bonjour / 大家好, this is <strong>Mr. X's</strong> blog.</p>
@@ -84,36 +84,18 @@ header-img: "img/home-bg.jpg"
     </p>
 </div>
 
+<!-- French Version -->
+<div class="fr post-container">
+    <blockquote><p>Version française à venir.</p></blockquote>
+    <p>🇫🇷 La version française de cette page est en cours de préparation. Merci de votre patience !</p>
+</div>
+
 <!-- Handle Language Change -->
 <script type="text/javascript">
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    var $select = document.querySelector("select");
-
-    window.addEventListener('hashchange', _render);
-
-    function _render(){
-        var _hash = window.location.hash;
-        if(_hash == "#en"){
-            $select.selectedIndex = 1;
-            $en.style.display = "block";
-            $zh.style.display = "none";
-        }else{
-            $select.selectedIndex = 0;
-            $zh.style.display = "block";
-            $en.style.display = "none";
-        }
-    }
-
-    function onLanChange(index){
-        if(index == 0){
-            window.location.hash = "#zh"
-        }else{
-            window.location.hash = "#en"
-        }
-    }
-
-    _render();
+    window.addEventListener('langchange', function(e) {
+        // CSS handles visibility via html.lang-* class
+        // This listener exists for any page-specific overrides
+    });
 </script>
 
 
