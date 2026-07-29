@@ -287,7 +287,7 @@ html.lang-fr .fr { display: block; }
         document.querySelectorAll('.lang-btn').forEach(function(b) { b.classList.remove('active'); });
         var btn = document.getElementById('lang-' + id);
         if (btn) btn.classList.add('active');
-        document.documentElement.className = 'lang-' + lang;
+        document.documentElement.className = 'lang-' + id;
         window.dispatchEvent(new CustomEvent('langchange', { detail: { lang: lang } }));
     }
 
