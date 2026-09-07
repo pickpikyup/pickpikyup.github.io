@@ -3,6 +3,14 @@ layout: page
 description: "Focus - 专注 - Se Concentrer"
 ---
 
+<!-- Industry Insight 入口 -->
+<div class="insight-entry" style="text-align:center;margin:10px 0 30px;padding:24px 20px;border:1px solid #e5e8ee;border-radius:10px;background:linear-gradient(135deg,#f8fbff,#eef3fa);">
+    <h3 style="margin:0 0 6px;font-size:22px;">Industry Insight</h3>
+    <p style="margin:0 0 14px;color:#5c6470;font-size:14px;">全球 AI 产业每周热点洞察 · 六大区域 × 八大产业层级 · 数据可溯源</p>
+    <a href="{{ '/ai-weekly/' | prepend: site.baseurl }}" style="display:inline-block;padding:11px 26px;background:#2471a3;color:#fff;border-radius:8px;font-size:15px;text-decoration:none;">进入 AI 产业洞察 →</a>
+</div>
+<hr style="margin-bottom:30px;">
+
 {% for post in paginator.posts %}
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
