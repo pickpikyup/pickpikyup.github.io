@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global AI Weekly · 2026-09-14 ~ 2026-09-20</title>
+<style>
+  :root{--bg:#0f1115;--card:#1a1d24;--card2:#22262f;--fg:#e6e9ef;--muted:#9aa3b2;--line:#2c313c;
+        --accent:#4da3ff;--good:#3ecf8e;--warn:#ffb454;--bad:#ff6b6b;--r1:#4da3ff;--r2:#ff7a59;--r3:#8d7bff;--r4:#ffce56;--r5:#3ecf8e;--r6:#e08aff;}
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--bg);color:var(--fg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;line-height:1.65;padding:16px;max-width:880px;margin:0 auto;}
+  h1{font-size:22px;letter-spacing:.5px;color:#fff;}
+  .sub{color:var(--muted);font-size:13px;margin-top:6px;}
+  .badge{display:inline-block;background:var(--card2);border:1px solid var(--line);padding:2px 9px;border-radius:20px;font-size:11px;color:var(--muted);margin-right:6px;}
+  section{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin-top:18px;}
+  h2{font-size:16px;margin-bottom:14px;color:#fff;display:flex;align-items:center;gap:8px;}
+  .dots{width:9px;height:9px;border-radius:50%;display:inline-block;}
+  h3{font-size:14px;margin:8px 0 4px;color:#fff;}
+  .statgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;}
+  .stat{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px;}
+  .stat .num{font-size:24px;font-weight:700;color:var(--accent);}
+  .stat .lbl{font-size:12px;color:var(--muted);margin-top:2px;}
+  .item{border-top:1px solid var(--line);padding:12px 0;margin-top:12px;}
+  .tuple{font-size:11px;color:var(--muted);margin:1px 0;font-family:ui-monospace,Menlo,Consolas,monospace;}
+  .tuple b{color:var(--fg);font-weight:600;}
+  .tlen{width:9px;display:inline-block;}
+  .ttl{font-size:15px;font-weight:600;margin:8px 0 4px;color:#fff;}
+  a{color:var(--accent);text-decoration:none;word-break:break-all;}
+  a:hover{text-decoration:underline;}
+  .one{font-size:13px;color:var(--muted);margin:6px 0;}
+  .meta{font-size:12px;color:var(--muted);}
+  .rel{font-weight:700;padding:1px 7px;border-radius:5px;font-size:11px;}
+  .rel-hi{background:rgba(62,207,142,.14);color:var(--good);}
+  .rel-mid{background:rgba(255,180,84,.14);color:var(--warn);}
+  .rel-lo{background:rgba(255,107,107,.14);color:var(--bad);}
+  .signal{background:var(--card2);border-left:3px solid var(--accent);border-radius:6px;padding:10px 12px;margin-top:8px;}
+  .risk{background:var(--card2);border-left:3px solid var(--warn);border-radius:6px;padding:10px 12px;margin-top:8px;}
+  .none{color:var(--muted);font-size:13px;padding:8px 0;}
+  .tag{display:inline-block;font-size:11px;padding:1px 8px;border-radius:5px;margin-right:6px;}
+  .foot{color:var(--muted);font-size:12px;margin-top:20px;padding-bottom:20px;}
+  ul{margin:6px 0 6px 18px;}
+  li{margin:4px 0;font-size:13px;}
+</style>
+</head>
+<body>
+  <h1>Global AI Weekly 周报</h1>
+  <div class="sub">
+    <span class="badge">2026-09-14 ~ 2026-09-20</span>
+    <span class="badge">研究型 AI 产业分析</span>
+    <span class="badge">区域 × L 产业层级</span>
+  </div>
+
+  <!-- ============ Executive Summary ============ -->
+  <section>
+    <h2><span class="dots" style="background:var(--accent)"></span>Executive Summary 摘要</h2>
+    <div class="statgrid">
+      <div class="stat"><div class="num">9</div><div class="lbl">本周收录新闻</div></div>
+      <div class="stat"><div class="num">6</div><div class="lbl">高可靠信源</div></div>
+      <div class="stat"><div class="num">3</div><div class="lbl">中可靠信源</div></div>
+      <div class="stat"><div class="num">1</div><div class="lbl">无动态区域(R6)</div></div>
+    </div>
+
+    <h3 style="margin-top:16px">Top 3 信号</h3>
+    <div class="signal"><b>① 算力军备进入「系统级竞争」：</b>华为昇腾960超节点（NPO近封装光互连、4096卡）与 NVIDIA Vera Rubin NVL72（MLPerf v6.1 首秀、吞吐最高 3.7x）本周同日登场——竞争焦点从单芯片转向「芯片-互联-机架一体」系统架构。</div>
+    <div class="signal"><b>② 头部实验室「减速论 vs 上新品」撕裂：</b>Anthropic CEO Amodei 呼吁全球放慢发布、获 Altman 与 Musk 呼应，但 Anthropic 又被曝考虑在 IPO 前推出新模型对抗 OpenAI GPT-6 Astra——安全表态与市场节奏明显矛盾。</div>
+    <div class="signal"><b>③ 治理与能源约束开始落硬约束：</b>英国将数据中心纳入网络安全与韧性法案监管；UNECE 预告 AI 数据中心将威胁全球电网。云厂商的电力与合规成本成为新的竞争变量。</div>
+
+    <h3 style="margin-top:16px">风险雷达</h3>
+    <div class="risk">⚠ <b>Anthropic IPO 窗口与模型发布节奏不确定</b>——若押注上市前新品被 OpenAI 压制，估值与行业格局可能剧变（Reuters 独家，中高概率）。</div>
+    <div class="risk">⚠ <b>中国「先进模型→开源→规模化部署」路径持续</b>——美国出口管制未阻断国产算力系统级突破，供应链瓶颈与地缘反馈可能升级。</div>
+    <div class="risk">⚠ <b>算力扩张撞上电网</b>——UNECE 明确警告数据中心建设快于电网配套，未来洲际/区域电价与审批将成为算力扩张的物理约束。</div>
+
+    <h3 style="margin-top:16px">宏观影响</h3>
+    <p class="one">本周主线是「🇨🇳华为 昇腾960 vs 🇺🇸NVIDIA Vera Rubin」的算力天花板之争，叠加美系前沿实验室在安全减速与商业加速之间的拉扯。对云厂商与 AI 投资者而言：推理能力（而非单纯训练算力）成为 Benchmark 新增焦点（MLPerf 新增 RAG / Edge Agentic 测试），电力与合规成本则开始实质性影响选址与扩张决策。</p>
+  </section>
+
+  <!-- ============ R1 China ============ -->
+  <section>
+    <h2><span class="dots" style="background:var(--r1)"></span>R1 · 中国</h2>
+
+    <div class="item">
+      <div class="tuple"><span class="tlen"></span>区域 → L1 算力</div>
+      <div class="ttl">华为全联接大会发布昇腾960超节点：NPO近封装光学、4096卡，国产算力转向系统级创新</div>
+      <div class="tuple">🔗 <a href="https://www.szzg.gov.cn/2026/xwzx/szkx/202609/t20260918_5372863.htm">https://www.szzg.gov.cn/2026/xwzx/szkx/202609/t20260918_5372863.htm</a></div>
+      <p class="one">影响评价：华为在 9/17 全联接大会发布昇腾960超节点（算力卡从 1024 升至 4096 卡，业界首个量产 NPO 光互联产品 Hi-ONE 7.2T，用 5500 颗替代 4.8 万颗 800G 光模块、功耗降超 550kW），可将 10 万亿参数模型训练/推理。标志国产算力从「拼单芯片」转向「芯片-互联-存储-整机」一体化，昇腾960DT 提前至 2027 Q1。对国产大模型训练是强支撑，带动光通信/液冷配套产业链。</p>
+      <div class="meta"><span class="tag" style="background:var(--card2)">来源：经济参考报(吴蔚/董雪) 经深圳市政务网转载</span><span class="tag">类别:①媒体/官方</span><span class="rel rel-hi">可靠度 高 · 官方发布会+官媒</span></div>
+    </div>
+
+    <div class="item">
+      <div class="tuple"><span class="tlen"></span>区域 → L3 模型&算法</div>
+      <div class="ttl">DeepSeek 本周发布首个开源 AI 模型，数学奥林匹克成绩达金牌级（待核实细节）</div>
+      <div class="tuple">🔗 <a href="https://www.uscc.gov/sites/default/files/2026-03/Two_Loops--How_Chinas_Open_AI_Strategy_Reinforces_Its_Industrial_Dominance.pdf">USCC《Two Loops》报告(引 SCMP 9/17 报道)</a></div>
+      <p class="one">影响评价：据 USCC 报告引 SCMP（9/17）报道，DeepSeek 于本周发布其首款开源 AI 模型，在数学奥林匹克评测达到金牌水平。延续国产开源模型「低成本+高质量」路线，进一步印证中国开源生态对全球 AI 定价与格局的冲击。注：具体模型名/规模未获一手确认，标「待证实」。</p>
+      <div class="meta"><span class="tag" style="background:var(--card2)">来源：USCC 报告引 SCMP</span><span class="tag">类别:②咨询/报告</span><span class="rel rel-mid">可靠度 中 · 二手转述，细节待证</span></div>
+    </div>
+
+    <div class="item">
+      <div class="tuple"><span class="tlen"></span>区域 → L7 政策与资本流向 / L5 终端</div>
+      <div class="ttl">中国人形机器人 IPO 潮降温：市场认为 hype 已超越现实，监管与估值趋于理性</div>
+      <div class="tuple">🔗 <a href="https://www.reuters.com/business/finance/china-slows-humanoid-robot-ipo-rush-hype-outruns-reality-2026-09-21/">https://www.reuters.com/business/finance/china-slows-humanoid-robot-ipo-rush-hype-outruns-reality-2026-09-21/</a></div>
+      <p class="one">影响评价：Reuters（9/20）报道，中国人形机器人赛道 IPO 节奏被踩刹车——市场回调、监管收紧，估值正从「叙事溢价」向「落地变现」回归。对硬件/终端厂商是短期利空、中长期去泡沫，彼得·蒂尔式叙事红利减弱，工程落地成为唯一估值依据。</p>
+      <div class="meta"><span class="tag" style="background:var(--card2)">来源：Reuters</span><span class="tag">类别:①媒体/官方</span><span class="rel rel-hi">可靠度 高 · 国际权威媒体</span></div>
+    </div>
+  </section>
+
+  <!-- ============ R2 US ============ -->
+  <section>
+    <h2><span class="dots" style="background:var(--r2)"></span>R2 · 美国</h2>
+
+    <div class="item">
+      <div class="tuple"><span class="tlen"></span>区域 → L1 算力</div>
+      <div class="ttl">NVIDIA Vera Rubin NVL72 在 MLPerf Inference v6.1 首秀：吞吐较 GB300 NVL72 最高 3.7x</div>
+      <div class="tuple">🔗 <a href="https://blogs.nvidia.com/blog/vera-rubin-nvl72-mlperf-inference/">https://blogs.nvidia.com/blog/vera-rubin-nvl72-mlperf-inference/</a></div>
+      <p class="one">影响评价：NVIDIA 官方（9/16）公布 Vera Rubin NVL72 在 MLPerf v6.1 的首个预览提交，吞吐最高达 GB300 NVL72 的 3.7 倍；本轮新增 End-to-End RAG 与 Edge Agentic 测试，31 个提交方含 512-GPU MI355X 跑分。Benchmark 从「纯训练算力」转向「推理/部署能力」，与 OpenAI 优先推理的叙事同频。</p>
+      <div class="meta"><span class="tag" style="background:var(--card2)">来源：NVIDIA 官方 Blog + HPCwire</span><span class="tag">类别:①媒体/官方</span><span class="rel rel-hi">可靠度 高 · 官方一手 + 权威垂直媒体</span></div>
+    </div>
+
+    <div class="item">
+      <div class="tuple"><span class="tlen"></span>区域 → L6 安全治理</div>
+      <div class="ttl">OpenAI 确认与 Anthropic、Google DeepMind 就 AI 安全进行数周谈判，Trump 团队淡化担忧</div>
+      <div class="tuple">🔗 <a href="https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/">https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/</a></div>
+      <p class="one">影响评价：OpenAI 全球政策主管 Chris Lehane 证实与两家对手已谈判数周，探索强大 AI 系统发布前的共同测试框架；但特朗普政府团队正淡化安全担忧、主张加速。监管真空下，「实验室自驱治理」成为事实标准，但政企诉求分歧加大。</p>
+      <div class="meta"><span class="tag" style="background:var(--card2)">来源：Reuters / TechCrunch</span><span class="tag">类别:①媒体/官方</span><span class="rel rel-hi">可靠度 高 · 多方交叉</span></div>
+    </div>
+
+    <div class="item">
+      <div class="tuple"><span class="tlen"></span>区域 → L3 模型&算法 / L7 资本</div>
+      <div class="ttl">Anthropic 考虑 IPO 前发布新模型对抗 OpenAI GPT-6 Astra；Amodei 呼吁业界减速</div>
+      <div class="tuple">🔗 <a href="https://www.reuters.com/business/anthropic-considers-releasing-new-ai-model-ahead-ipo-sources-say-2026-09-19/">https://www.reuters.com/business/anthropic-considers-releasing-new-ai-model-ahead-ipo-sources-say-2026-09-19/</a></div>
+      <p class="one">影响评价：Reuters 独家（9/18）称 Anthropic 正权衡在预期 IPO 前发布新模型，以遏制 OpenAI GPT-6 Astra 的增长势头（Astra 约占 Ramp 追踪企业 AI 支出的 13%，高于 Claude Fable 的 8%）。CEO Amodei 9/12 发表 3800 字长文呼吁全球放慢模型能力提升，获 Altman 与 Musk 响应——「安全减速」与「商业加速」的矛盾进入公开博弈。</p>
+      <div class="meta"><span class="tag" style="background:var(--card2)">来源：Reuters (EXCLUSIVE, 3 sources)</span><span class="tag">类别:①媒体/官方</span><span class="rel rel-hi">可靠度 高 · 独家多信源</span></div>
+    </div>
+  </section>
+
+  <!-- ============ R3 Europe ============ -->
+  <section>
+    <h2><span class="dots" style="background:var(--r3)"></span>R3 · 欧洲</h2>
+
+    <div class="item">
+      <div class="tuple"><span class="tlen"></span>区域 → L6 安全治理</div>
+      <div class="ttl">英国《网络安全与韧性法案》将数据中心带入监管新纪元</div>
+      <div class="tuple">🔗 <a href="https://www.traverssmith.com/knowledge/knowledge-container/the-cyber-security-and-resilience-bill-a-new-era-for-data-centre-regulation/">https://www.traverssmith.com/knowledge/knowledge-container/the-cyber-security-and-resilience-bill-a-new-era-for-data-centre-regulation/</a></div>
+      <p class="one">影响评价：Travers Smith（9/17）法律简报分析英国《网络安全与韧性法案》对数据中心提出的新合规义务。叠加 EU AI Act 已进入适用期（8/2 起透明度条款生效），欧洲对 AI 基础设施的监管正从「模型层」向「物理/数据层」延伸——抬高在欧建云/机房的门槛。</p>
+      <div class="meta"><span class="tag" style="background:var(--card2)">来源：Travers Smith 法律简报</span><span class="tag">类别:②咨询/报告</span><span class="rel rel-mid">可靠度 中 · 律所分析，需官方定稿核实</span></div>
+    </div>
+
+    <p class="none">其余欧洲指标（EU AI Act 适用、AI Office 执法权力）均为 8 月前的存量进展，本周无重大新增，故不重复收录。</p>
+  </section>
+
+  <!-- ============ R4 Asia Pacific ============ -->
+  <section>
+    <h2><span class="dots" style="background:var(--r4)"></span>R4 · 亚太</h2>
+
+    <div class="item">
+      <div class="tuple"><span class="tlen"></span>区域 → L1 算力</div>
+      <div class="ttl">Samsung 与 ASML 扩大 High NA EUV 战略合作，布局 12 英寸光掩膜板平台</div>
+      <div class="tuple">🔗 <a href="https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing">https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing</a></div>
+      <p class="one">影响评价：Samsung 与 ASML（2026-09，Samsung Newsroom）深化 High NA EUV 合作并加入 12 英寸光掩膜板行业平台，直指下一代 AI 芯片制造的成本与产出效率。叠加 Win Source 周报（9/14-18）提及 Samsung 投资 400 亿日元 Yokohama 先进封装研发中心——韩系在「AI 芯片制造全链路」上加码，稳固其 AI 存储/代工地位。</p>
+      <div class="meta"><span class="tag" style="background:var(--card2)">来源：Samsung Newsroom</span><span class="tag">类别:①媒体/官方</span><span class="rel rel-hi">可靠度 高 · 官方公告</span></div>
+    </div>
+  </section>
+
+  <!-- ============ R5 Middle East ============ -->
+  <section>
+    <h2><span class="dots" style="background:var(--r5)"></span>R5 · 中东</h2>
+
+    <div class="item">
+      <div class="tuple"><span class="tlen"></span>区域 → L1 算力 / L7 资本</div>
+      <div class="ttl">美国境外最大 AMD 推理集群上线；G42 评估融资；LEAP 2026 沙特密集发布 AI 公告</div>
+      <div class="tuple">🔗 <a href="https://www.middleeastainews.com/p/biggest-ex-us-amd-inference-cluster">https://www.middleeastainews.com/p/biggest-ex-us-amd-inference-cluster</a></div>
+      <p class="one">影响评价：中东 AI 垂直媒体（本周 digest）称美国境外最大的 AMD 推理集群上线，G42 正评估外部融资以确保先进算力获取，LEAP 2026 期间沙特发布密集 AI 公告。主权 AI 与「美国以外算力多元化」叙事强化，AMD 成为中东绕开 NVIDIA 依赖的关键变量。</p>
+      <div class="meta"><span class="tag" style="background:var(--card2)">来源：Middle East AI News</span><span class="tag">类别:③行业垂直/社交</span><span class="rel rel-mid">可靠度 中 · 行业通讯，集群具体规模待核实</span></div>
+    </div>
+  </section>
+
+  <!-- ============ R6 Africa ============ -->
+  <section>
+    <h2><span class="dots" style="background:var(--r6)"></span>R6 · 非洲</h2>
+    <p class="none">本周无重大动态——检索至 9/14-9/20 未见可获得验证的本周可靠信源（原关注点多为此前数周/月的存量话题：肯尼亚数据中心暂停、Microsoft 东部非洲项目付款争议、Equinix 南非投资等，均已超出一周窗口）。宁可空缺，不硬凑。马里/卢旺达等 AI 基础设施进展有待后续观察。</p>
+  </section>
+
+  <!-- ============ Bottom ============ -->
+  <section>
+    <h2><span class="dots" style="background:var(--accent)"></span>本周三大趋势</h2>
+    <ul>
+      <li><b>算力进入「系统级天花板」战争：</b>华为昇腾960超节点（NPO 光互连）与 NVIDIA Vera Rubin NVL72（MLPerf 首秀）同期验证——未来壁垒在「芯片-高速互联-机架-冷却」一体化系统，而非单一 die。这对供应链的启示是：光互连（NPO/CPO）、液冷、超节点协议（如华为灵衢协议）成为高价值配套环节。</li>
+      <li><b>「安全减速」与「商业加速」公开撕裂：</b>Amodei 呼吁放慢、获 Altman/Musk 呼应，与此同时 Anthropic 考虑 IPO 前上新品、OpenAI Astra 抢企业份额——顶层「谨慎叙事」与真实产品节奏背离，投资者需识别语言与动作的错位。</li>
+      <li><b>能源 + 监管成为算力扩张的硬约束：</b>UNECE 预告数据中心耗电量 2030 年将逼近翻倍且威胁电网，英国将数据中心纳入网络安全法案、EU AI Act 进入适用期——云厂商的合规与电力成本开始实质影响扩张决策，「在哪建、建多大」将越来越多由电网与法规而非芯片决定。</li>
+    </ul>
+
+    <h3 style="margin-top:16px">对算力 / 云厂商的意义</h3>
+    <ul>
+      <li>国产算力（华为昇腾）正以系统级创新对冲出口管制，业务机会在光通信（NPO/CPO）、液冷、超节点工程化落地等配套产业链。</li>
+      <li>推理（而非训练）成为 Benchmark 与商业拉锯的主战场（MLPerf 新增 RAG/Agentic、Astra 攻企业市场），云厂商应预置推理优化能力，CSP 采购决策受模型竞争（OpenAI vs Anthropic）直接影响。</li>
+      <li>欧洲/英国对数据中心的监管、以及全球电网瓶颈，将抬高合规与能源成本——尤其对计划在中东/欧洲扩容的中资与出海云厂商。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="dots" style="background:var(--muted)"></span>来源可靠度统计</h2>
+    <ul>
+      <li><span class="rel rel-hi">高</span> × 6：华为/经济参考报(官方)、NVIDIA Blog+HPCwire、Reuters×2、Samsung Newsroom、TechCrunch</li>
+      <li><span class="rel rel-mid">中</span> × 3：USCC引SCMP(DeepSeek)、Travers Smith(UK)、Middle East AI News(中东)</li>
+      <li><span class="rel rel-lo">低</span> × 0：本周未采信未经证实的社交信源</li>
+    </ul>
+    <h3 style="margin-top:16px">完整来源清单</h3>
+    <ul>
+      <li>华为昇腾960超节点 — 经济参考报 经 szzg.gov.cn：<a href="https://www.szzg.gov.cn/2026/xwzx/szkx/202609/t20260918_5372863.htm">链接</a></li>
+      <li>DeepSeek 开源模型 — USCC《Two Loops》(引 SCMP 9/17)：<a href="https://www.uscc.gov/sites/default/files/2026-03/Two_Loops--How_Chinas_Open_AI_Strategy_Reinforces_Its_Industrial_Dominance.pdf">链接</a></li>
+      <li>人形机器人 IPO 降温 — Reuters：<a href="https://www.reuters.com/business/finance/china-slows-humanoid-robot-ipo-rush-hype-outruns-reality-2026-09-21/">链接</a></li>
+      <li>NVIDIA Vera Rubin MLPerf — NVIDIA Blog：<a href="https://blogs.nvidia.com/blog/vera-rubin-nvl72-mlperf-inference/">链接</a> / HPCwire：<a href="https://www.hpcwire.com/off-the-wire/nvidia-vera-rubin-nvl72-delivers-leading-performance-in-mlperf-inference-v6-1-debut/">链接</a></li>
+      <li>OpenAI×Anthropic×Google 安全谈判 — TechCrunch：<a href="https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/">链接</a> / Reuters：<a href="https://www.reuters.com/technology/openai-is-working-with-anthropic-google-ai-safety-bloomberg-news-reports-2026-09-15/">链接</a></li>
+      <li>Anthropic IPO 前新模型 — Reuters(EXCLUSIVE)：<a href="https://www.reuters.com/business/anthropic-considers-releasing-new-ai-model-ahead-ipo-sources-say-2026-09-19/">链接</a></li>
+      <li>UK 数据中心监管 — Travers Smith：<a href="https://www.traverssmith.com/knowledge/knowledge-container/the-cyber-security-and-resilience-bill-a-new-era-for-data-centre-regulation/">链接</a></li>
+      <li>Samsung×ASML — Samsung Newsroom：<a href="https://news.samsung.com/global/samsung-electronics-and-asml-expand-strategic-collaboration-for-next-generation-semiconductor-manufacturing">链接</a></li>
+      <li>中东 AMD 推理集群 / G42 / LEAP — Middle East AI News：<a href="https://www.middleeastainews.com/p/biggest-ex-us-amd-inference-cluster">链接</a></li>
+    </ul>
+  </section>
+
+  <div class="foot">
+    Global AI Weekly · 数据截至 2026-09-20（本周一至周日）。所有 URL 均来自检索返回的真实信源；预测/估算已标注口径。R6 非洲未见本周可靠信源，如实标注。生成：Hermes Agent cron。
+  </div>
+</body>
+</html>
