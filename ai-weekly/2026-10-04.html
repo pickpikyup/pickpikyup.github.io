@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 产业周报 · 2026-09-28 ~ 10-04</title>
+<style>
+  :root{
+    --bg:#0f1115; --card:#171a21; --card2:#1d212b; --txt:#e6e8ee; --sub:#9aa3b2;
+    --accent:#4f8cff; --accent2:#7c5cff; --good:#3ddc84; --warn:#ffb020; --bad:#ff5c5c;
+    --line:#2a2f3a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.6;padding-bottom:60px}
+  .wrap{max-width:860px;margin:0 auto;padding:0 16px}
+  /* 顶部固定返回导航栏 */
+  .topnav{position:sticky;top:0;z-index:100;background:rgba(15,17,21,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:10px 0}
+  .topnav .wrap{display:flex;gap:10px;flex-wrap:wrap}
+  .topnav a{display:inline-block;padding:7px 14px;border-radius:8px;text-decoration:none;font-size:13px;font-weight:600;border:1px solid var(--line);color:var(--txt);background:var(--card2);transition:.2s}
+  .topnav a:hover{border-color:var(--accent);color:var(--accent)}
+  .topnav a.home{background:linear-gradient(135deg,var(--accent),var(--accent2));border:none;color:#fff}
+  h1{font-size:26px;margin:26px 0 4px;letter-spacing:.5px}
+  .sub{color:var(--sub);font-size:13px;margin-bottom:22px}
+  h2{font-size:20px;margin:34px 0 14px;padding-left:12px;border-left:4px solid var(--accent)}
+  h3{font-size:16px;margin:18px 0 8px;color:var(--accent)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:14px}
+  .statbox{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:16px 0}
+  .stat{background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center}
+  .stat .n{font-size:24px;font-weight:700;color:var(--accent)}
+  .stat .l{font-size:12px;color:var(--sub);margin-top:2px}
+  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:20px;margin-right:6px;font-weight:600}
+  .t-r1{background:rgba(255,92,92,.15);color:#ff8a8a}
+  .t-r2{background:rgba(79,140,255,.15);color:#8ab4ff}
+  .t-r3{background:rgba(124,92,255,.15);color:#b39dff}
+  .t-r4{background:rgba(61,220,132,.15);color:#6fe8a8}
+  .t-r5{background:rgba(255,176,32,.15);color:#ffc95c}
+  .t-r6{background:rgba(0,200,200,.15);color:#4dd8d8}
+  .t-l{background:rgba(255,255,255,.08);color:var(--sub)}
+  .rel{font-size:11px;padding:2px 8px;border-radius:20px;font-weight:600}
+  .rel-h{background:rgba(61,220,132,.15);color:#6fe8a8}
+  .rel-m{background:rgba(255,176,32,.15);color:#ffc95c}
+  .rel-l{background:rgba(255,92,92,.15);color:#ff8a8a}
+  .item{border-left:3px solid var(--line);padding:10px 0 10px 14px;margin:14px 0}
+  .item .title{font-size:15px;font-weight:600;margin:4px 0}
+  .item .meta{font-size:12px;color:var(--sub);margin:4px 0}
+  .item .impact{font-size:13px;color:var(--txt);margin-top:6px;background:var(--card2);border-radius:8px;padding:8px 10px}
+  .item a{color:var(--accent);text-decoration:none;word-break:break-all}
+  .item a:hover{text-decoration:underline}
+  .signal{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:12px}
+  .signal .snum{display:inline-block;width:26px;height:26px;line-height:26px;text-align:center;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-weight:700;font-size:13px;margin-right:8px}
+  .risk{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+  .risk span{background:var(--card2);border:1px solid var(--line);border-radius:8px;padding:6px 12px;font-size:13px}
+  .risk .hi{border-color:var(--bad);color:var(--bad)}
+  .risk .mid{border-color:var(--warn);color:var(--warn)}
+  .risk .lo{border-color:var(--good);color:var(--good)}
+  ul.clean{list-style:none}
+  ul.clean li{padding:6px 0 6px 20px;position:relative;font-size:14px}
+  ul.clean li:before{content:"▸";position:absolute;left:0;color:var(--accent)}
+  .src{font-size:13px;color:var(--sub);margin:4px 0}
+  .src a{color:var(--accent);text-decoration:none;word-break:break-all}
+  .note{font-size:13px;color:var(--sub);background:var(--card2);border:1px dashed var(--line);border-radius:10px;padding:12px;margin:12px 0}
+  .footer{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);color:var(--sub);font-size:12px}
+  @media(max-width:600px){h1{font-size:22px}.topnav a{font-size:12px;padding:6px 10px}}
+</style>
+</head>
+<body>
+
+<!-- 顶部固定返回导航栏 -->
+<nav class="topnav">
+  <div class="wrap">
+    <a href="https://pickpikyup.github.io/ai-weekly/">← 返回 AI 周报归档</a>
+    <a class="home" href="https://pickpikyup.github.io/">← 返回博客首页</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<h1>全球 AI 产业热点周报</h1>
+<div class="sub">统计周期：2026-09-28（周一）— 2026-10-04（周日）· 生成于 2026-10-05 · 中文为主，专有名词保留英文</div>
+
+<!-- Executive Summary -->
+<h2>Executive Summary</h2>
+
+<div class="statbox">
+  <div class="stat"><div class="n">6</div><div class="l">本周收录新闻</div></div>
+  <div class="stat"><div class="n">5</div><div class="l">美国 R2</div></div>
+  <div class="stat"><div class="n">1</div><div class="l">欧洲 R3</div></div>
+  <div class="stat"><div class="n">4</div><div class="l">可靠度「高」</div></div>
+  <div class="stat"><div class="n">0</div><div class="l">待证实/低可靠</div></div>
+</div>
+
+<div class="signal">
+  <span class="snum">1</span><strong>美国进入「模型发布周」：OpenAI DevDay 发布 GPT-6.1 Sol 与 Dots 智能体，Google 发布 Gemini 4 Argon，Anthropic 发布 Sonnet 5.5</strong>
+  <p style="margin-top:8px;font-size:14px;color:var(--sub)">三大前沿实验室几乎同周放量，且共同指向「更便宜、更快、面向日常任务」的 mid-tier 模型，而非单纯堆旗舰。价格战与效率战成为主线。</p>
+</div>
+<div class="signal">
+  <span class="snum">2</span><strong>安全与商业化张力集中爆发：OpenAI 因安全顾虑叫停 GPT-6.1 Astra 发布</strong>
+  <p style="margin-top:8px;font-size:14px;color:var(--sub)">WSJ 报道 OpenAI 取消原定 10 月发布的 GPT-6.1 Astra，与 Anthropic/Google 的安全协调、OpenAI 安全员工离职等事件叠加，安全治理（L6）成为本周高频议题。</p>
+</div>
+<div class="signal">
+  <span class="snum">3</span><strong>算力资本化遇冷：NVIDIA 5000 亿美元芯片抵押融资计划遭华尔街质疑</strong>
+  <p style="margin-top:8px;font-size:14px;color:var(--sub)">银行与投资者对 GPU 作为长期抵押品的估值存疑，要求更强担保。这是 AI 基建「以芯片养芯片」模式首次遭遇系统性信用检验。</p>
+</div>
+
+<h3>风险雷达</h3>
+<div class="risk">
+  <span class="hi">高 · 前沿模型安全叫停（Astra）</span>
+  <span class="hi">高 · AI 基建融资信用风险（NVIDIA 500B）</span>
+  <span class="mid">中 · 中美 AI 治理分歧（安全对话 vs 出口管制）</span>
+  <span class="mid">中 · 欧洲算力主权追赶（Mistral 1GW）</span>
+  <span class="lo">低 · 中国本周无重大发布（窗口期平静）</span>
+</div>
+
+<h3>宏观影响</h3>
+<p style="font-size:14px">本周信号指向 AI 产业从「拼旗舰能力」转向「拼单位成本效率」：OpenAI/Anthropic/Google 集体推出更便宜、更快的 mid-tier 模型，直接利好推理算力与云厂商的规模化部署；同时安全叫停与融资质疑表明，算力扩张的「金融化」与「安全化」两道闸门正在收紧，对依赖大规模 capex 的云厂商与算力供应商构成中期不确定性。</p>
+
+<!-- R1 中国 -->
+<h2>R1 · 中国</h2>
+<div class="note">本周无重大动态。最近一次重大事件均在本周窗口（9/28–10/4）之前：9/26 中美就 AI 对话与 30 亿美元商品关税削减达成一致（Reuters）；9/22 阿里发布「中国最强」AI 芯片 Zhenwu V900 并宣布 5–10 万亿参数模型计划（Reuters）。按 7 天窗口严格口径，不列为本周新闻。</div>
+
+<!-- R2 美国 -->
+<h2>R2 · 美国</h2>
+
+<div class="card">
+  <div class="item">
+    <div><span class="tag t-r2">R2 美国</span><span class="tag t-l">L3 模型&算法</span></div>
+    <div class="title">OpenAI 在 DevDay 发布 GPT-6.1 Sol，称性能接近旗舰 GPT-6 Astra 且成本更低</div>
+    <div class="meta">来源：TechCrunch · 类别：①媒体/官方 · 可靠度 <span class="rel rel-h">高</span>（一线科技媒体，官方发布）</div>
+    <div class="meta">链接：<a href="https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/">techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol…</a></div>
+    <div class="impact">影响：OpenAI 以「近旗舰性能、更低价格」切入日常推理市场，标志前沿实验室转向效率竞争，利好推理算力规模化。</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="item">
+    <div><span class="tag t-r2">R2 美国</span><span class="tag t-l">L3 模型&算法</span></div>
+    <div class="title">Google 发布 Gemini 4 Argon，称其最强模型，但仅向受信网络安全专家开放</div>
+    <div class="meta">来源：CNBC / The Guardian · 类别：①媒体/官方 · 可靠度 <span class="rel rel-h">高</span>（一线媒体 + 官方博客）</div>
+    <div class="meta">链接：<a href="https://www.cnbc.com/2026/09/30/google-gemini-4-argon-ai.html">cnbc.com/2026/09/30/google-gemini-4-argon-ai.html</a></div>
+    <div class="impact">影响：Google 以「安全受限发布」策略重回前沿对话，但限制访问也反映前沿模型安全管控成为发布常态。</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="item">
+    <div><span class="tag t-r2">R2 美国</span><span class="tag t-l">L3 模型&算法</span></div>
+    <div class="title">Anthropic 发布 Claude Sonnet 5.5，速度提升 30%、成本降低 30%，性能逼近 Opus</div>
+    <div class="meta">来源：Anthropic 官方 / DeepLearning.AI · 类别：①媒体/官方 · 可靠度 <span class="rel rel-h">高</span>（官方发布 + 权威分析）</div>
+    <div class="meta">链接：<a href="https://www.anthropic.com/claude-sonnet-5-5">anthropic.com/claude-sonnet-5-5</a></div>
+    <div class="impact">影响：Sonnet 5.5 以「近 Opus 性能、半价」定位 mid-tier，进一步压低企业级推理成本，加剧模型价格战。</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="item">
+    <div><span class="tag t-r2">R2 美国</span><span class="tag t-l">L6 安全治理</span></div>
+    <div class="title">WSJ：OpenAI 因安全顾虑叫停原定 10 月发布的 GPT-6.1 Astra 模型</div>
+    <div class="meta">来源：The Wall Street Journal · 类别：①媒体/官方 · 可靠度 <span class="rel rel-h">高</span>（权威财经媒体）</div>
+    <div class="meta">链接：<a href="https://www.wsj.com/tech/ai/openai-chatgpt-model-release-cancel-safety-5a2f9f42">wsj.com/tech/ai/openai-chatgpt-model-release-cancel-safety…</a></div>
+    <div class="impact">影响：前沿模型「安全叫停」成为现实，叠加 OpenAI 安全员工离职（Reuters 10/3），安全治理对发布节奏的约束力上升。</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="item">
+    <div><span class="tag t-r2">R2 美国</span><span class="tag t-l">L7 政策与资本流向</span></div>
+    <div class="title">Reuters：NVIDIA 5000 亿美元芯片抵押融资计划遭华尔街质疑，银行要求更强担保</div>
+    <div class="meta">来源：Reuters · 类别：①媒体/官方 · 可靠度 <span class="rel rel-h">高</span>（权威通讯社，多方信源）</div>
+    <div class="meta">链接：<a href="https://www.reuters.com/legal/transactional/nvidias-bet-that-its-chips-can-finance-ai-boom-gets-wall-street-reality-check-2026-10-01/">reuters.com/legal/transactional/nvidias-bet-that-its-chips-can-finance-ai-boom…</a></div>
+    <div class="impact">影响：GPU 作为长期抵押品的估值遭质疑，AI 基建「以芯片养芯片」的融资模式面临系统性信用检验，影响算力扩张的资金链。</div>
+  </div>
+</div>
+
+<!-- R3 欧洲 -->
+<h2>R3 · 欧洲</h2>
+
+<div class="card">
+  <div class="item">
+    <div><span class="tag t-r3">R3 欧洲</span><span class="tag t-l">L3 模型&算法 / L4 应用</span></div>
+    <div class="title">Mistral 在慕尼黑开设工业 AI 中心，宣布 2030 年前建成 1GW 欧洲算力</div>
+    <div class="meta">来源：Mistral 官方 · 类别：①媒体/官方 · 可靠度 <span class="rel rel-h">高</span>（官方发布）</div>
+    <div class="meta">链接：<a href="https://mistral.ai/news/hallo-deutschland/">mistral.ai/news/hallo-deutschland/</a></div>
+    <div class="impact">影响：Mistral 以「主权 + 工业 AI（Physics AI）」切入德国重工业（BMW、Siemens Energy），并承诺 1GW 欧洲算力，是欧洲算力主权追赶的标志性动作。</div>
+  </div>
+</div>
+
+<!-- R4 亚太 -->
+<h2>R4 · 亚太</h2>
+<div class="note">本周无重大动态。近期相关事件（印度-日本 AI 合作、韩国 AI 芯片计划）均在本周窗口之前，未列入。</div>
+
+<!-- R5 中东 -->
+<h2>R5 · 中东</h2>
+<div class="note">本周无重大动态。近期相关事件（UAE 因伊朗袭击调整 AI 数据中心计划，Reuters 9/11）在本周窗口之前，未列入。</div>
+
+<!-- R6 非洲 -->
+<h2>R6 · 非洲</h2>
+<div class="note">本周无重大动态。南非开普敦民间团体要求对 AI 数据中心实施全国暂停（Rest of World，9/17）在本周窗口之前，未列入。</div>
+
+<!-- 底部 -->
+<h2>本周三大趋势</h2>
+<ul class="clean">
+  <li><strong>效率竞争取代旗舰竞赛</strong>：GPT-6.1 Sol、Gemini 4 Argon、Sonnet 5.5 集体主打「更便宜、更快、够用」，模型价格战从中国蔓延至美国前沿实验室。</li>
+  <li><strong>安全治理成为发布硬约束</strong>：OpenAI 叫停 Astra、Gemini 4 Argon 受限发布、安全员工离职，安全审查正实质影响前沿模型的上市节奏。</li>
+  <li><strong>算力金融化遭遇信用检验</strong>：NVIDIA 5000 亿美元芯片抵押融资被华尔街质疑，AI 基建的资本循环模式进入风险重估期。</li>
+</ul>
+
+<h2>对算力 / 云厂商的意义</h2>
+<ul class="clean">
+  <li><strong>推理算力需求结构性上升</strong>：mid-tier 模型放量 + 降价，将推动推理（inference）负载增长，利好推理优化与规模化推理云。</li>
+  <li><strong>算力融资成本上升</strong>：NVIDIA 融资计划遇冷，云厂商与算力供应商的 capex 融资难度与成本可能上升，需更强调现金流与客户合同背书。</li>
+  <li><strong>安全合规成为差异化</strong>：前沿模型受限发布与安全协调常态化，云厂商在安全治理、合规能力上的投入将成为竞争变量。</li>
+</ul>
+
+<h2>来源可靠度统计</h2>
+<div class="statbox">
+  <div class="stat"><div class="n">6</div><div class="l">总新闻数</div></div>
+  <div class="stat"><div class="n">6</div><div class="l">可靠度「高」</div></div>
+  <div class="stat"><div class="n">0</div><div class="l">可靠度「中」</div></div>
+  <div class="stat"><div class="n">0</div><div class="l">可靠度「低/待证实」</div></div>
+</div>
+
+<h2>完整来源清单</h2>
+<div class="src">1. TechCrunch — OpenAI launches GPT-6.1 Sol（2026-09-29）<br><a href="https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/">https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/</a></div>
+<div class="src">2. CNBC — Google rolls out Gemini 4 Argon（2026-09-30）<br><a href="https://www.cnbc.com/2026/09/30/google-gemini-4-argon-ai.html">https://www.cnbc.com/2026/09/30/google-gemini-4-argon-ai.html</a></div>
+<div class="src">3. Anthropic — Claude Sonnet 5.5（2026-09/10 初）<br><a href="https://www.anthropic.com/claude-sonnet-5-5">https://www.anthropic.com/claude-sonnet-5-5</a></div>
+<div class="src">4. The Wall Street Journal — OpenAI scraps release of new AI model over safety（2026-09-28）<br><a href="https://www.wsj.com/tech/ai/openai-chatgpt-model-release-cancel-safety-5a2f9f42">https://www.wsj.com/tech/ai/openai-chatgpt-model-release-cancel-safety-5a2f9f42</a></div>
+<div class="src">5. Reuters — Nvidia's bet that its chips can finance the AI boom gets a Wall Street reality check（2026-10-01）<br><a href="https://www.reuters.com/legal/transactional/nvidias-bet-that-its-chips-can-finance-ai-boom-gets-wall-street-reality-check-2026-10-01/">https://www.reuters.com/legal/transactional/nvidias-bet-that-its-chips-can-finance-ai-boom-gets-wall-street-reality-check-2026-10-01/</a></div>
+<div class="src">6. Mistral — Hallo, Deutschland!（2026-09-29）<br><a href="https://mistral.ai/news/hallo-deutschland/">https://mistral.ai/news/hallo-deutschland/</a></div>
+
+<div class="footer">
+  本报告由 Hermes Agent 自动生成 · 数据窗口 2026-09-28 ~ 2026-10-04 · 所有 URL 均来自 web_search 返回的真实信源，未虚构。<br>
+  可靠度规范：官方一手=高；权威媒体=高；行业垂直媒体转述=中；社交/未证实=低（标「待证实」）。本周收录条目均为高可靠度。
+</div>
+
+</div>
+</body>
+</html>
