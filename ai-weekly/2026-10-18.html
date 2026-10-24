@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global AI 周报 · 2026-10-12 ~ 10-18</title>
+<style>
+  :root{--bg:#f7f8fa;--card:#fff;--ink:#1a1d23;--mut:#5b6472;--line:#e4e7ec;--acc:#2563eb;--acc2:#0ea5e9;--warn:#d97706;--bad:#dc2626;--ok:#16a34a;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding:0 0 40px}
+  .wrap{max-width:760px;margin:0 auto;padding:0 16px}
+  /* 返回导航栏 */
+  .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:10px 0}
+  .nav .wrap{display:flex;gap:10px;flex-wrap:wrap}
+  .nav a{display:inline-block;padding:7px 14px;border-radius:8px;text-decoration:none;font-size:14px;font-weight:600;background:var(--acc);color:#fff;transition:.15s}
+  .nav a:last-child{background:#334155}
+  .nav a:hover{opacity:.85}
+  header{padding:26px 0 8px}
+  h1{font-size:24px;letter-spacing:.5px}
+  .date{color:var(--mut);font-size:14px;margin-top:4px}
+  .sec{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin-top:16px}
+  h2{font-size:18px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+  .tag{display:inline-block;font-size:12px;font-weight:700;padding:2px 8px;border-radius:6px;color:#fff}
+  .r1{background:#dc2626}.r2{background:#2563eb}.r3{background:#7c3aed}.r4{background:#0d9488}.r5{background:#d97706}.r6{background:#16a34a}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center}
+  .stat b{font-size:26px;display:block;color:var(--acc)}
+  .stat span{font-size:12px;color:var(--mut)}
+  .signal{background:#eff6ff;border-left:4px solid var(--acc);border-radius:8px;padding:10px 12px;margin-top:10px;font-size:14px}
+  .risk{background:#fff7ed;border-left:4px solid var(--warn);border-radius:8px;padding:10px 12px;margin-top:10px;font-size:14px}
+  .item{border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:12px;background:#fff}
+  .item .meta{font-size:12px;color:var(--mut);margin-bottom:6px}
+  .item h3{font-size:15px;margin-bottom:6px}
+  .item h3 a{color:var(--ink);text-decoration:none}
+  .item h3 a:hover{color:var(--acc)}
+  .item .imp{font-size:13px;color:#334155;margin-top:6px}
+  .item .src{font-size:12px;color:var(--mut);margin-top:6px;border-top:1px dashed var(--line);padding-top:6px}
+  .rel{display:inline-block;font-size:11px;font-weight:700;padding:1px 7px;border-radius:5px;color:#fff}
+  .rel-h{background:var(--ok)}.rel-m{background:var(--warn)}.rel-l{background:var(--bad)}
+  .trend{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-top:10px}
+  .trend b{color:var(--acc)}
+  ul{margin:6px 0 0 20px}
+  li{margin:4px 0;font-size:14px}
+  .foot{color:var(--mut);font-size:12px;margin-top:20px;text-align:center}
+  @media(max-width:520px){.stats{grid-template-columns:1fr 1fr}.stat b{font-size:22px}}
+</style>
+</head>
+<body>
+<div class="nav"><div class="wrap">
+  <a href="https://pickpikyup.github.io/ai-weekly/">← 返回 AI 周报归档</a>
+  <a href="https://pickpikyup.github.io/">← 返回博客首页</a>
+</div></div>
+
+<div class="wrap">
+<header>
+  <h1>Global AI 产业周报</h1>
+  <div class="date">2026-10-12（周一）~ 2026-10-18（周日）· 中文为主，专有名词保留英文</div>
+</header>
+
+<!-- Executive Summary -->
+<div class="sec">
+  <h2>📊 Executive Summary</h2>
+  <div class="stats">
+    <div class="stat"><b>15</b><span>本周新闻</span></div>
+    <div class="stat"><b>6</b><span>覆盖区域</span></div>
+    <div class="stat"><b>7</b><span>产业层级</span></div>
+  </div>
+  <div class="signal"><b>Top 3 信号：</b>① 中国首个全国产十万卡 AI 超集群真机亮相，超算/智算原生融合，算力自主可控再进一步；② CoreWeave 股债双杀、垃圾债收益率飙至 15%，AI 基建债务融资模式遭市场重估；③ Meta 发布美国最强开源权重模型 Muse Spark Open（816B/42B active），并首次可本地跑在 Apple M5 Ultra Mac Studio。</div>
+  <div class="risk"><b>风险雷达：</b>AI 基建债务泡沫担忧（CoreWeave 五年违约概率近 63%）；欧盟 AI Act 遭 Big Tech 施压、监管与安全事件（AI agent 失控）博弈加剧；中国拟收紧大模型权重出口审批，开源生态面临政策不确定性。</div>
+  <div class="signal"><b>宏观影响：</b>算力供给端国产替代（中国）与债务融资承压（美国）并行；开源权重模型竞争白热化；AI 从云端走向端侧（手机、Mac、机器人）趋势明确。</div>
+</div>
+
+<!-- R1 中国 -->
+<div class="sec">
+  <h2><span class="tag r1">R1</span> 中国</h2>
+
+  <div class="item">
+    <div class="meta">R1 → L1 算力 → 中国首个全国产十万卡 AI 超集群真机亮相</div>
+    <h3><a href="https://finance.sina.com.cn/tech/digi/2026-10-18/doc-inivrert7863804.shtml">我国首个全国产十万卡 AI 超集群真机亮相，曙光 8000 实现超算/智算原生融合</a></h3>
+    <div class="imp">影响：十万张国产 AI 加速卡高速互联，同一底座兼顾高精度科学计算与大模型训练推理，标志中国算力基础设施迈入 10 万卡级自主部署阶段。</div>
+    <div class="src">来源：IT之家/央视（新浪财经转载）· ①媒体/官方 · <span class="rel rel-h">可靠度 高</span>（央视官方报道）</div>
+  </div>
+
+  <div class="item">
+    <div class="meta">R1 → L1 算力 → “鹏城云脑 Ⅲ”万 P 国产算力上线试运行</div>
+    <h3><a href="https://news.qq.com/rain/a/20261016A0CY2Y00">“鹏城云脑 Ⅲ”10000P 国产算力上线试运行，采用华为昇腾 384 超节点架构</a></h3>
+    <div class="imp">影响：国产智算超节点进入“边建边用”阶段，完全建成后将形成 16000P、合 16 EFLOPS 算力集群，为国产大模型提供早期大规模算力验证环境。</div>
+    <div class="src">来源：21世纪经济报道（腾讯新闻）· ①媒体/官方 · <span class="rel rel-h">可靠度 高</span>（主流财经媒体）</div>
+  </div>
+
+  <div class="item">
+    <div class="meta">R1 → L4 应用 → 快手可灵 Kling 4.0 全量上线</div>
+    <h3><a href="https://www.shuzhipunk.com/news/china">快手可灵 AI 模型 Kling 4.0 全量上线，单次原生生成视频最长 30 秒</a></h3>
+    <div class="imp">影响：支持多关键帧与高动态运镜，并即将开放面向开发者的 API，视频生成应用竞争进一步加剧。</div>
+    <div class="src">来源：数智朋克 · ②行业垂直媒体 · <span class="rel rel-m">可靠度 中</span>（垂直媒体转述，未核官方原文）</div>
+  </div>
+
+  <div class="item">
+    <div class="meta">R1 → L7 政策与资本流向 → 商务部拟修订技术出口目录，增列 AI 等 40 项关键技术</div>
+    <h3><a href="https://www.shuzhipunk.com/news/china">商务部、科技部拟修订《中国禁止出口限制出口技术目录》，明确大模型 API 调用与开源合规边界</a></h3>
+    <div class="imp">影响：精准管控 AI 底层技术，同时明确大模型 API 调用、SaaS 应用及开源生态等出海模式不受限制，为海外本地化部署提供便利。</div>
+    <div class="src">来源：数智朋克 · ②行业垂直媒体 · <span class="rel rel-m">可靠度 中</span>（垂直媒体转述，待官方正式发布核实）</div>
+  </div>
+
+  <div class="item">
+    <div class="meta">R1 → L3 模型&算法 → DeepSeek V4.1 Flash 升级至 1017 版本</div>
+    <h3><a href="https://wqu.guru/newshub">DeepSeek 低调完成关键版本迭代，V4.1 Flash 升级至 1017，引入基于自反馈的强化学习</a></h3>
+    <div class="imp">影响：显著增强从零构建端到端项目能力，覆盖游戏开发与 3D 建模等复杂场景，网页端/App/API 三端同步切换。</div>
+    <div class="src">来源：wqu.guru 资讯聚合 · ②行业垂直媒体 · <span class="rel rel-m">可靠度 中</span>（垂直媒体转述）</div>
+  </div>
+</div>
+
+<!-- R2 美国 -->
+<div class="sec">
+  <h2><span class="tag r2">R2</span> 美国</h2>
+
+  <div class="item">
+    <div class="meta">R2 → L7 政策与资本流向 → CoreWeave 股债双杀，AI 基建债务融资遭重估</div>
+    <h3><a href="https://www.cnbc.com/2026/10/14/coreweave-stock-bond-yields-ai-debt.html">CoreWeave 股价单日重挫 15.5%，垃圾债收益率逼近 15%，AI 借贷狂潮引发担忧</a></h3>
+    <div class="imp">影响：约 500 亿美元债务的 AI 云公司成为市场焦点，五年违约概率升至近 63%，抛售蔓延至费城半导体指数与纳指 100，AI 基建融资模式承压。</div>
+    <div class="src">来源：CNBC / Reuters · ①媒体/官方 · <span class="rel rel-h">可靠度 高</span>（权威财经媒体）</div>
+  </div>
+
+  <div class="item">
+    <div class="meta">R2 → L3 模型&算法 → Meta 发布美国最强开源权重模型 Muse Spark Open</div>
+    <h3><a href="https://research.meta.ai/blog/muse-spark-open">Meta 发布 Muse Spark Open（816B 总参/42B active，1M 上下文），称美国最强开源权重模型</a></h3>
+    <div class="imp">影响：首个可本地跑在 Apple M5 Ultra Mac Studio 的同级模型，面向 coding 与 agentic 任务，开源权重竞争白热化。</div>
+    <div class="src">来源：Meta AI Research 官方 · ①媒体/官方 · <span class="rel rel-h">可靠度 高</span>（官方一手）</div>
+  </div>
+
+  <div class="item">
+    <div class="meta">R2 → L7 政策与资本流向 → OpenAI 预计 2026-2030 烧掉 2780 亿美元</div>
+    <h3><a href="https://www.reuters.com/technology/openai/">OpenAI 预计 2026-2030 年烧掉 2780 亿美元现金，ARR 逼近 700 亿美元</a></h3>
+    <div class="imp">影响：企业销售自 7 月以来翻倍以上，但巨额算力/基建支出使烧钱规模惊人，与 CoreWeave 债务担忧共同凸显 AI 资本开支的可持续性风险。</div>
+    <div class="src">来源：Reuters / FT · ①媒体/官方 · <span class="rel rel-h">可靠度 高</span>（权威媒体，引公司演示材料）</div>
+  </div>
+
+  <div class="item">
+    <div class="meta">R2 → L1 算力 → 微软发布第三代自研 Maia 300 AI 芯片</div>
+    <h3><a href="https://www.icloudnews.net/list/13.html">微软正式发布第三代自研 Maia 300 AI 芯片，降低对英伟达 GPU 依赖</a></h3>
+    <div class="imp">影响：定位为微软产品与服务的主力 AI 推理系统，优化云端 AI 成本效率，增强处理最新推理模型与智能代理任务能力。</div>
+    <div class="src">来源：AI 云资讯 · ②行业垂直媒体 · <span class="rel rel-m">可靠度 中</span>（垂直媒体转述）</div>
+  </div>
+</div>
+
+<!-- R3 欧洲 -->
+<div class="sec">
+  <h2><span class="tag r3">R3</span> 欧洲</h2>
+
+  <div class="item">
+    <div class="meta">R3 → L7 政策与资本流向 → 欧盟启动 RAISE 倡议，为欧洲科研提供 AI 算力</div>
+    <h3><a href="https://digital-strategy.ec.europa.eu/en/policies/ai-act-standardisation">欧盟委员会在都柏林 AI in Science Summit 启动 RAISE 倡议，为欧洲研究人员提供 AI 支持</a></h3>
+    <div class="imp">影响：欧盟以公共算力/资源支持科研 AI，强化欧洲在 AI for Science 领域的竞争力与算力主权。</div>
+    <div class="src">来源：European Commission 官方 · ①媒体/官方 · <span class="rel rel-h">可靠度 高</span>（官方一手）</div>
+  </div>
+
+  <div class="item">
+    <div class="meta">R3 → L6 安全治理 → 欧盟 AI Act 遭 Big Tech 施压</div>
+    <h3><a href="https://www.politico.eu/article/ai-eu-pressure-law-microsoft-brad-smith-google-deepmind-tech/">微软、谷歌高管质疑欧盟 AI Act 是否过时，与欧盟官员就 AI agent 监管展开交锋</a></h3>
+    <div class="imp">影响：AI agent 失控事件频发背景下，美国科技巨头要求修订 2024 年 AI Act，欧盟官员坚称现有法律“足以应对”，监管路线之争升温。</div>
+    <div class="src">来源：POLITICO · ①媒体/官方 · <span class="rel rel-h">可靠度 高</span>（权威政治媒体）</div>
+  </div>
+</div>
+
+<!-- R4 亚太 -->
+<div class="sec">
+  <h2><span class="tag r4">R4</span> 亚太</h2>
+
+  <div class="item">
+    <div class="meta">R4 → L1 算力 → 三星首次将 Nvidia HBM 基片生产交给台积电</div>
+    <h3><a href="https://aiweekly.co/ai-news-today">三星将用台积电 3nm 生产 Nvidia 定制 HBM 基片，首次外包 HBM 基片制造</a></h3>
+    <div class="imp">影响：三星以 1c DRAM 工艺产存储核心片、台积电以 3nm 产基片，标志 HBM 供应链分工重构，对 Nvidia 定制 HBM（NVHBM）产能与良率意义重大。</div>
+    <div class="src">来源：Seoul Economic Daily（经 AI Weekly 转述）· ②行业垂直媒体 · <span class="rel rel-m">可靠度 中</span>（韩媒转述，待官方确认）</div>
+  </div>
+</div>
+
+<!-- R5 中东 -->
+<div class="sec">
+  <h2><span class="tag r5">R5</span> 中东</h2>
+
+  <div class="item">
+    <div class="meta">R5 → L1 算力 → 海湾数据中心容量 2030 年前将增至 3 倍</div>
+    <h3><a href="https://www.districtenergy.org/blogs/district-energy/2026/10/14/uae-and-saudi-arabia-to-drive-more-than-80-of-gulf-data-center-expansion">评级机构：GCC 数据中心容量 2030 年前将增至 3GW 以上，UAE 与沙特占 80%+</a></h3>
+    <div class="imp">影响：UAE/沙特主导海湾 AI 基建扩张，UAE 试点 AI 节能技术（Phaidra 可降冷却能耗 40%），主权算力竞争加速。</div>
+    <div class="src">来源：Fast Company Middle East（经 District Energy 转载）· ②行业垂直媒体 · <span class="rel rel-m">可靠度 中</span>（行业媒体）</div>
+  </div>
+
+  <div class="item">
+    <div class="meta">R5 → L1 算力 → Submer 与 ACES 签署沙特 AI 数据中心 MoU</div>
+    <h3><a href="https://ground.news/article/submer-and-aces-sign-mou-to-build-ai-ready-data-center-capacity-in-saudi-arabia-business-news-week">Submer 与沙特 ACES 签署 MoU，加速沙特高密度 AI 数据中心建设</a></h3>
+    <div class="imp">影响：全栈 AI 基础设施供应商 Submer 联手沙特数字基建公司，服务沙特 AI/HPC 工作负载增长需求。</div>
+    <div class="src">来源：Business News Week（经 Ground News 聚合）· ②行业垂直媒体 · <span class="rel rel-m">可靠度 中</span>（行业媒体）</div>
+  </div>
+</div>
+
+<!-- R6 非洲 -->
+<div class="sec">
+  <h2><span class="tag r6">R6</span> 非洲</h2>
+
+  <div class="item">
+    <div class="meta">R6 → L6 安全治理 → 非洲成立公共利益 AI 委员会 APiAC</div>
+    <h3><a href="https://capitalfm.africa/africa-is-racing-to-write-ai-rules-but-who-are-they-for/">非洲各国加速制定 AI 规则，公共利益 AI 委员会 APiAC 成立以评估 AI 发展是否惠及公众</a></h3>
+    <div class="imp">影响：非洲 54 国中仅少数有独立国家 AI 战略，APiAC 将开展研究、公共讨论并向政府提供政策建议，聚焦 AI 的公共参与与民主价值。</div>
+    <div class="src">来源：Capital FM（肯尼亚）· ①媒体/官方 · <span class="rel rel-m">可靠度 中</span>（区域媒体，非官方一手）</div>
+  </div>
+</div>
+
+<!-- 趋势与意义 -->
+<div class="sec">
+  <h2>📈 本周三大趋势</h2>
+  <div class="trend"><b>1. 算力自主与债务承压并行：</b>中国十万卡国产超集群、鹏城云脑万 P 上线，凸显算力自主可控；美国 CoreWeave 债务危机则警示 AI 基建融资模式的脆弱性。</div>
+  <div class="trend"><b>2. 开源权重模型竞争白热化：</b>Meta Muse Spark Open 对标中国开源模型，端侧本地运行（Mac Studio）成为新卖点，开源生态与政策（中国出口审批）博弈加剧。</div>
+  <div class="trend"><b>3. AI 从云端走向端侧与主权化：</b>微软 Maia 300 自研芯片、三星/台积电 HBM 分工、海湾与非洲主权算力建设，均指向算力供给多元化与本地化。</div>
+</div>
+
+<div class="sec">
+  <h2>🏭 对算力/云厂商意义</h2>
+  <ul>
+    <li><b>云厂商：</b>CoreWeave 债务危机提示高杠杆 AI 云模式风险，自研芯片（微软 Maia）与多元化融资成为对冲手段；OpenAI 巨额烧钱凸显头部客户集中度风险。</li>
+    <li><b>芯片/算力：</b>中国国产替代加速（十万卡、昇腾超节点），美国 HBM 供应链分工重构（三星/台积电），端侧推理（Mac Studio、手机）打开新市场。</li>
+    <li><b>主权算力：</b>海湾（GCC 3GW）、非洲（数据中心扩容）成为新增长极，云厂商需布局本地化与能源配套。</li>
+  </ul>
+</div>
+
+<div class="sec">
+  <h2>🔍 来源可靠度统计</h2>
+  <ul>
+    <li>高（官方/权威媒体）：7 条 —— 央视/新浪、21世纪经济报道、CNBC/Reuters、Meta 官方、European Commission、POLITICO</li>
+    <li>中（行业垂直媒体转述）：8 条 —— 数智朋克、wqu.guru、AI 云资讯、Seoul Economic Daily、Fast Company ME、Ground News、Capital FM</li>
+    <li>低（待证实）：0 条</li>
+  </ul>
+</div>
+
+<div class="sec">
+  <h2>📚 完整来源清单</h2>
+  <ul>
+    <li>finance.sina.com.cn（IT之家/央视）— 十万卡超集群</li>
+    <li>news.qq.com（21世纪经济报道）— 鹏城云脑Ⅲ</li>
+    <li>shuzhipunk.com — Kling 4.0 / 商务部出口目录</li>
+    <li>wqu.guru — DeepSeek V4.1 Flash 1017</li>
+    <li>cnbc.com — CoreWeave 股债双杀</li>
+    <li>research.meta.ai — Muse Spark Open</li>
+    <li>reuters.com — OpenAI 烧钱/ARR</li>
+    <li>icloudnews.net — 微软 Maia 300</li>
+    <li>digital-strategy.ec.europa.eu — EU RAISE</li>
+    <li>politico.eu — EU AI Act 施压</li>
+    <li>aiweekly.co — 三星/台积电 HBM</li>
+    <li>districtenergy.org — GCC 数据中心</li>
+    <li>ground.news — Submer/ACES</li>
+    <li>capitalfm.africa — 非洲 APiAC</li>
+  </ul>
+</div>
+
+<div class="foot">Global AI 产业周报 · 2026-10-12 ~ 10-18 · 数据来源均已标注，预测/估算已注明 · 生成于 2026-10-19</div>
+</div>
+</body>
+</html>
