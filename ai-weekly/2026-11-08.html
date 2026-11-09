@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global AI 周报 · 2026-11-02 ~ 11-08</title>
+<style>
+  :root{--bg:#f6f7f9;--card:#ffffff;--ink:#1a1d24;--sub:#5c6370;--line:#e4e7ec;
+        --acc:#2563eb;--acc2:#0ea5e9;--warn:#f59e0b;--danger:#ef4444;--ok:#10b981;}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",Segoe UI,Roboto,sans-serif;line-height:1.6;padding-bottom:60px}
+  .nav{position:sticky;top:0;z-index:10;background:rgba(26,29,36,.92);backdrop-filter:blur(8px);padding:10px 16px;display:flex;gap:18px;flex-wrap:wrap}
+  .nav a{color:#fff;text-decoration:none;font-size:13px;font-weight:600;padding:6px 12px;border-radius:6px;background:rgba(255,255,255,.12)}
+  .nav a:hover{background:rgba(255,255,255,.25)}
+  .wrap{max-width:820px;margin:0 auto;padding:20px 16px}
+  h1{font-size:24px;margin:8px 0 4px}
+  .date{color:var(--sub);font-size:13px;margin-bottom:20px}
+  .summary{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:20px}
+  .stats{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:14px}
+  .stat{flex:1;min-width:100px;background:var(--bg);border-radius:10px;padding:10px;text-align:center}
+  .stat b{display:block;font-size:22px;color:var(--acc)}
+  .stat span{font-size:12px;color:var(--sub)}
+  h2{font-size:18px;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid var(--acc)}
+  h3{font-size:15px;margin:18px 0 8px;color:var(--acc)}
+  .tag{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;margin-right:6px;vertical-align:middle}
+  .t-R1{background:#fee2e2;color:#b91c1c}.t-R2{background:#dbeafe;color:#1d4ed8}
+  .t-R3{background:#eef2ff;color:#4338ca}.t-R4{background:#ccfbf1;color:#0f766e}
+  .t-R5{background:#fff7ed;color:#c2410c}.t-R6{background:#f3e8ff;color:#7e22ce}
+  .conf{font-size:11px;font-weight:700;padding:2px 6px;border-radius:4px}
+  .conf-h{background:#dcfce7;color:#166534}.conf-m{background:#fef9c3;color:#854d0e}.conf-l{background:#fee2e2;color:#b91c1c}
+  .lpick{color:var(--acc2);font-weight:700}
+  a.title{font-weight:600;font-size:15px;color:var(--acc);text-decoration:none}
+  a.title:hover{text-decoration:underline}
+  .item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:12px}
+  .meta{font-size:12px;color:var(--sub);margin-top:6px}
+  .impact{font-size:13px;color:var(--ink);margin:8px 0 0;background:var(--bg);border-left:3px solid var(--acc);padding:8px 10px;border-radius:0 6px 6px 0}
+  .impact b{color:var(--acc)}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:20px}
+  .box h4{margin:0 0 10px;font-size:15px;color:var(--acc)}
+  ul{margin:6px 0 6px 0;padding-left:18px}
+  li{margin-bottom:8px}
+  .src{font-size:12px;color:var(--sub)}
+  .trend{background:var(--bg);border-radius:10px;padding:12px;margin-bottom:10px}
+  .radar{background:var(--bg);border-radius:10px;padding:12px}
+  .dim{color:var(--sub)}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="https://pickpikyup.github.io/ai-weekly/">← 返回 AI 周报归档</a>
+  <a href="https://pickpikyup.github.io/">← 返回博客首页</a>
+</nav>
+<div class="wrap">
+
+<h1>Global AI 产业周报</h1>
+<div class="date">2026-11-02 ~ 2026-11-08（UTC）· 覆盖 R1中国 R2美国 R3欧洲 R4亚太 R5中东 R6非洲</div>
+
+<div class="summary">
+  <div style="font-weight:700;color:var(--acc);margin-bottom:10px">◆ 执行摘要 Executive Summary</div>
+  <div class="stats">
+    <div class="stat"><b>15</b><span>条新闻</span></div>
+    <div class="stat"><b>6</b><span>个区域覆盖</span></div>
+    <div class="stat"><b>6</b><span>个 L 层触及</span></div>
+    <div class="stat"><b>高13/中2</b><span>可靠度分布</span></div>
+  </div>
+  <h3>Top-3 本周信号</h3>
+  <ul>
+    <li><b>国产算力挺进训练侧：</b>报道称 DeepSeek V5 将首次原生基于华为昇腾950 训练（此前仅推理），一旦跑通即标志国产「训练+推理」全链路闭环，直接改写国内算力格局（R1）。</li>
+    <li><b>出口管制进入执法深水区：</b>黄仁勋被国会传唤涉中国情报蜜罐、美国被曝批准向"空置办公室"售 H200、NVIDIA 收紧东南亚 GPU 追踪——管制正在从"规则"转向"跟踪+问责"（R2）。</li>
+    <li><b>主权 AI 成全球竞赛主线：</b>从韩国（SKT+Rebellions+NVIDIA 异构）、欧盟（都柏林峰会+万亿开源 Le Chonk）到中东（主权基金联合投资）、非洲（$100亿基金提案），"能自己掌控的大模型/算力"是本周最强叙事（R3/R4/R5/R6）。</li>
+  </ul>
+  <h3>风险雷达</h3>
+  <div class="radar">
+    <b>↑ 地缘/出口管制</b>：NVIDIA 对华执法收紧、谈判桌被国会介入<br>
+    <b>↑ 算力供应链</b>：HBM 供需缺口、内存价格与交付成为 H1 算力扩张最大制约<br>
+    <b>→ 监管张力</b>：欧盟 AI 分级监管与"竞速"矛盾；美国中期选举后数据中心社区反弹<br>
+    <b>→ 开源格局</b>：中国开源 Token 连续 27 周全球第一，开源 vs 闭源天平持续倾斜
+  </div>
+  <h3>宏观影响（对算力/云厂商）</h3>
+  <div class="radar">地对性"主权算力"采购成为全球确定性增量，各国云/超算厂商与主权基金是主力买家；NVIDIA 用 NVLink Fusion 把国产 NPU 圈进生态（防守式开放）与华为昇腾生态的崛起正面交锋，算力侧"生态锁定"之争取代纯性能之争；对中国下游（如快手/可灵类视频大模型）而言，国产训练算力的成熟将拓宽供给并压低算力成本曲线。</div>
+</div>
+
+<!-- R1 -->
+<h2>R1 · 中国</h2>
+<div class="item" id="r1-1">
+  <div><span class="tag t-R1">R1 中国</span><span class="lpick">L3 模型&算法</span> <a class="title" href="https://www.chaincatcher.com/article/2301282" target="_blank">报道称 DeepSeek V5 将首次基于华为昇腾芯片训练，此前昇腾仅承担推理</a></div>
+  <p class="impact"><b>影响评价：</b>若跑通全流程，标志国内最高梯队大模型完整走通「国产芯片训练+推理」；直接利好昇腾生态，同时意味着摩尔线程等国产第二梯队暂未进入 DeepSeek 训练算力侧（选型阶段）。</p>
+  <div class="meta">来源：ChainCatcher（转《科创板日报》记者黄心怡原创）· 类别 ①媒体/官方 · 可靠度 <span class="conf conf-h">高</span>（产业人士一手+权威科技媒体）</div>
+</div>
+
+<div class="item" id="r1-2">
+  <div><span class="tag t-R1">R1 中国</span><span class="lpick">L3 模型&算法</span> <a class="title" href="https://uk.finance.yahoo.com/news/tencent-declares-latest-ai-model-061905500.html" target="_blank">腾讯发布 Hy4 大模型，称首次跻身中国顶级开源模型行列，参数上探约 770B 并引入视觉理解</a></div>
+  <p class="impact"><b>影响评价：</b>腾讯补上"开源第一梯队"短板，与 Z.ai、Moonshot、DeepSeek 正面竞争；7B 级视觉+Computer Use 能力切向企业办公与设计工具，加剧国内开源模型价格战。</p>
+  <div class="meta">来源：Bloomberg via Yahoo Finance · 类别 ①媒体/官方 · 可靠度 <span class="conf conf-h">高</span>（Bloomberg 直接报道）</div>
+</div>
+
+<div class="item" id="r1-3">
+  <div><span class="tag t-R1">R1 中国</span><span class="lpick">L7 政策与资本流向</span> <a class="title" href="https://finance.sina.com.cn/roll/2026-11-04/doc-inixqhkz0125977.shtml" target="_blank">乌镇峰会：中国开源大模型 Token 调用量连续 27 周超过美国，全球前五占四席、DeepSeek 居首</a></div>
+  <p class="impact"><b>影响评价：</b>开源生态是中国 AI 的全球竞争力核心叙事，OpenRouter 数据背书"中国开源主导"；蔡崇信、GSMA 等公开力挺开源，直接抬高中国开源模型在全球中小企业和新兴市场的采用面。</p>
+  <div class="meta">来源：中新社 via 新浪财经 · 类别 ①媒体/官方 · 可靠度 <span class="conf conf-h">高</span>（官方通讯社援引 OpenRouter 实测数据）</div>
+</div>
+
+<div class="item" id="r1-4">
+  <div><span class="tag t-R1">R1 中国</span><span class="lpick">L1 算力</span> <a class="title" href="https://slicast.com/zh/commentary/huawei-2026-11-03" target="_blank">分析：华为昇腾占中国 AI 芯片市场约 28%，英伟达降至 34%，生态与出口管制驱动格局重构</a></div>
+  <p class="impact"><b>影响评价：</b>多方独立数据指向中国加速器市场发生结构性再平衡——软件生态黏性（DeepSeek 绑定昇腾）+DeepSeek 开源推理框架单集群日吞吐 155 万亿 token，正实质性撬动英伟达存量份额。</p>
+  <div class="meta">来源：Slicast 行业分析 · 类别 ②咨询报告/媒体 · 可靠度 <span class="conf conf-m">中</span>（数据未独立审计，标注为方向性参考）</div>
+</div>
+
+<!-- R2 -->
+<h2>R2 · 美国</h2>
+<div class="item" id="r2-1">
+  <div><span class="tag t-R2">R2 美国</span><span class="lpick">L6 安全治理</span> <a class="title" href="https://finance.yahoo.com/news/openai-launches-gpt-6-cyber-084819971.html" target="_blank">OpenAI 发布 GPT-6 Cyber 安全模型：自主发现漏洞，已产出 948 个 Linux 提权漏洞补丁、发现 81 个 Firefox 高危漏洞</a></div>
+  <p class="impact"><b>影响评价：</b>AI 主动防御进入"自主攻防"阶段，分级为 Critical 并限流白名单客户；对政企安全市场与"AI for security"叙事是强信号，也抬高对手滥用风险。</p>
+  <div class="meta">来源：Yahoo Finance / OpenAI News · 类别 ①媒体/官方 · 可靠度 <span class="conf conf-h">高</span>（OpenAI 官方发布+citing）</div>
+</div>
+
+<div class="item" id="r2-2">
+  <div><span class="tag t-R2">R2 美国</span><span class="lpick">L7 政策与资本流向 / L0 能源</span> <a class="title" href="https://abcnews.com/Business/openai-issues-new-data-center-policies-after-midterm/story?id=137874775" target="_blank">OpenAI 发布数据中心新政：全额支付电费与基础设施、建立本地契约，回应中期选举后社区反弹</a></div>
+  <p class="impact"><b>影响评价：</b>民主党中期选举大胜后 OpenAI 抢跑"算力落地民意"议程——数据中心的社会许可成本上升，未来美国本土超大规模算力扩张将更依赖社区博弈而非纯资本投入。</p>
+  <div class="meta">来源：ABC News · 类别 ①媒体/官方 · 可靠度 <span class="conf conf-h">高</span>（主流媒体原文+运营商正式声明）</div>
+</div>
+
+<div class="item" id="r2-3">
+  <div><span class="tag t-R2">R2 美国</span><span class="lpick">L7 政策与资本流向</span> <a class="title" href="https://alltechstocks.com/us.html" target="_blank">NVIDIA 出口审查升级：黄仁勋被国会传唤涉"中国蜜罐"事件，另被曝批准向"空置办公室"售 H200、收紧东南亚 GPU 追踪</a></div>
+  <p class="impact"><b>影响评价：</b>对华管制从"规则"走向"追踪+问责"——NVIDIA Cloud Partner 资格绑定 Fleet Intelligence 追踪，出口许可审批声誉受损；管制收紧或进一步压低 NVIDIA 中国存量并加速逃逸链路（见欧洲条）。</p>
+  <div class="meta">来源：The Information via alltechstocks（聚合） · 类别 ①媒体 · 可靠度 <span class="conf conf-m">中</span>（源自 The Information 报道，经聚合站转述，国会传唤事件待核实原文细节）</div>
+</div>
+
+<!-- R3 -->
+<h2>R3 · 欧洲</h2>
+<div class="item" id="r3-1">
+  <div><span class="tag t-R3">R3 欧洲</span><span class="lpick">L7 政策与资本流向</span> <a class="title" href="https://www.brusselstimes.com/brussels-2/2390745/eu-leaders-to-meet-in-dublin-for-ai-summit-next-week" target="_blank">欧盟领导人将于 11 月 13 日举行都柏林 AI 峰会，聚焦竞争力、AI 主权与国际治理合作</a></div>
+  <p class="impact"><b>影响评价：</b>欧盟把"AI 主权/竞争力"抬上领导人层级议程，Mistral CEO Mensch 与 Hinton 将出席；是欧盟从"重监管"转向"重竞速"的重要政治信号。</p>
+  <div class="meta">来源：The Brussels Times · 类别 ①媒体/官方 · 可靠度 <span class="conf conf-h">高</span>（据欧理会主席 Costa 公开表态）</div>
+</div>
+
+<div class="item" id="r3-2">
+  <div><span class="tag t-R3">R3 欧洲</span><span class="lpick">L3 模型&算法 / L7</span> <a class="title" href="https://www.i-scoop.eu/mistral-large-4-sovereign-ai/" target="_blank">Mistral 开源万亿参数 Large 4「Le Chonk」，CEO 警告欧盟"没有前沿 AI 就是完整体陷阱"</a></div>
+  <p class="impact"><b>影响评价：</b>欧洲顶级开源主权模型落地（训练记录可审计、欧洲基建全栈训练），直指"能掌控"的模型叙事；Mistral 目标 2027 年底欧洲 200MW、2030 年 1GW 算力。</p>
+  <div class="meta">来源：POLITICO / i-scoop · 类别 ①媒体 · 可靠度 <span class="conf conf-h">高</span>（POLITICO 专访 + 官方发布）</div>
+</div>
+
+<div class="item" id="r3-3">
+  <div><span class="tag t-R3">R3 欧洲</span><span class="lpick">L1 算力</span> <a class="title" href="https://alltechstocks.com/stocks/nvda.html" target="_blank">中国 Moonshot 借道欧洲 neocloud 租赁 NVIDIA Blackwell，绕开对华出口管制</a></div>
+  <p class="impact"><b>影响评价：</b>中国头部模型公司通过"租云"获取顶级 HBM 能力+API 间接用 Blackwell，管制只管"买卖"难管"租赁"；欧洲 neocloud 意外成为对华算力的灰色中转站，值得管制与合规双线关注。</p>
+  <div class="meta">来源：CNBC（经 alltechstocks 转述） · 类别 ①媒体 · 可靠度 <span class="conf conf-m">中</span>（源自 CNBC 消息人士，转述为主）</div>
+</div>
+
+<!-- R4 -->
+<h2>R4 · 亚太</h2>
+<div class="item" id="r4-1">
+  <div><span class="tag t-R4">R4 亚太</span><span class="lpick">L1 算力</span> <a class="title" href="https://en.yna.co.kr/view/AEN20261109005400320" target="_blank">NVIDIA+SK Telecom+Rebellions 签署 MOU，用 NVLink Fusion 建 GPU+本地 NPU 异构计算，做 prefill/decode 分阶段推理</a></div>
+  <p class="impact"><b>影响评价：</b>韩国"主权 AI"借 NVIDIA 开放生态落地：Rebellions R200 NPU 走 prefill、NVIDIA GPU 走 decode 的分解推理，是 NVIDIA"防守式开放"拉拢国产芯片的样板，也直接启发国内异构算力架构方向。</p>
+  <div class="meta">来源：Yonhap（韩联社）/ NVIDIA Newsroom · 类别 ①媒体/官方 · 可靠度 <span class="conf conf-h">高</span>（韩政府科技部官宣 + NVIDIA 官方新闻稿）</div>
+</div>
+
+<!-- R5 -->
+<h2>R5 · 中东</h2>
+<div class="item" id="r5-1">
+  <div><span class="tag t-R5">R5 中东</span><span class="lpick">L1 算力</span> <a class="title" href="https://enterpriseam.com/ksa/issues/no-blinking-in-the-buildout/" target="_blank">UAE 拟修订 G42 主导的 5GW「UAE-US AI 校园」计划，从单一 26 平方公里园区改为全国分布式网络</a></div>
+  <p class="impact"><b>影响评价：</b>全球最大 AI 园区之一改分布式布局，反映电力/水/算力资源在全国错配；Stargate UAE 首批 200MW 计划 2026Q4 交付，中东算力扩张进入实质性落地期。</p>
+  <div class="meta">来源：Reuters（经 enterpriseam/EMFI 转述） · 类别 ①媒体 · 可靠度 <span class="conf conf-m">中</span>（Reuters 报道路透性计划，方案未最终定稿）</div>
+</div>
+
+<div class="item" id="r5-2">
+  <div><span class="tag t-R5">R5 中东</span><span class="lpick">L7 政策与资本流向</span> <a class="title" href="https://www.thenationalnews.com/business/markets/2026/11/03/exclusive-eqt-joint-deals-saudi-uae-sovereign-investors/" target="_blank">EQT（欧洲最大私募）与沙特/阿联酋主权基金洽谈 AI 与数据中心联合投资</a></div>
+  <p class="impact"><b>影响评价：</b>海湾主权资本 ($1200亿+ AI 计划、黑石+沙特 Humain $30亿、微软+10亿) 把中东做成全球 AI 基建最重要买方与资本 Partner；EQT 携 EdgeConneX 切入，region 内"主权算力+国际运营"合资模式成型。</p>
+  <div class="meta">来源：The National（独家） · 类别 ①媒体 · 可靠度 <span class="conf conf-h">高</span>（湾区主流报独家采访 EQT 全球主席，数据有 IMF 等佐证）</div>
+</div>
+
+<!-- R6 -->
+<h2>R6 · 非洲</h2>
+<div class="item" id="r6-1">
+  <div><span class="tag t-R6">R6 非洲</span><span class="lpick">L7 政策与资本流向</span> <a class="title" href="https://bizwatchnigeria.ng/adesina-proposes-10bn-africa-ai-fund-to-mobilise-50bn-over-10-years/" target="_blank">前非洲开发银行行长 Adesina 提议 $100 亿「非洲 AI 前沿科技基金」，十年撬动 $500 亿</a></div>
+  <p class="impact"><b>影响评价：</b>非洲 AI 融资最大胆的多边提案：直指地区早期资本与基建缺口（非洲仅约 250 家 AI 创业公司、2016-25 全行业累计融资仅 $13 亿、中位融资 $22.5 万）；若落地将重构非洲算力/创业生态，同步深化中国开源模型在新兴市场的出口（乌干达千问本地化案例）。</p>
+  <div class="meta">来源：BizWatch Nigeria / The Africa Report · 类别 ①媒体 · 可靠度 <span class="conf conf-h">高</span>（公开峰会演讲，援引官方数据）</div>
+</div>
+
+<div class="item" id="r6-2">
+  <div><span class="tag t-R6">R6 非洲</span><span class="lpick">L4 应用 / L7</span> <a class="title" href="https://www.africaainews.com/p/ex-adb-official-calls-for-10b-ai" target="_blank">塞内加尔与盖茨基金会启动「塞内加尔 AI 扩展枢纽」，聚焦医疗/农业/教育本地化 AI</a></div>
+  <p class="impact"><b>影响评价：</b>盖茨基金会背书让非洲"应用层 AI"获得确定性资金；结合开源模型低成本入口，西非正形成"基金会+开源模型+本地语种"的应用增长极（呼应千问覆盖 68 种非洲语言）。</p>
+  <div class="meta">来源：Africa AI News（综合 Empower Africa） · 类别 ②咨询/垂直媒体 · 可靠度 <span class="conf conf-m">中</span>（垂直媒体转述，单项目 $1000 万级）</div>
+</div>
+
+<!-- 趋势 -->
+<h2>本周三大趋势</h2>
+<div class="box">
+  <div class="trend"><b>1. 「主权 AI」从口号变采购/工程现实。</b>韩国 SKT+Rebellions+NVIDIA 异构 MOU、欧盟都柏林峰会与万亿级 Le Chonk、中东主权基金合资、非洲 $100 亿基金——各国把"可控算力+自主模型"当作国家数字主权的落地工程，主权算力采购成全球确定性增量。</div>
+  <div class="trend"><b>2. 生态锁定取代纯性能之争。</b>NVIDIA 用 NVLink Fusion「防守式开放」把国产 NPU 圈进自家机架生态（应对昇腾+DeepSeek 生态崛起），同时华为昇腾 + 中国开源模型 Token 全球领先正撬动英伟达在华份额——竞争焦点从芯片指标转向软件/互连/开发者生态。</div>
+  <div class="trend"><b>3. 出口管制的执法成本与灰色逃逸同步放大。</b>国会传唤、空置办公室审批、东南亚追踪收紧表明对华管制进入"跟踪+问责"阶段；与此同时 Moonshot 等借欧洲 neocloud「租云」绕行，管制有效性遭遇结构性挑战。</div>
+</div>
+
+<div class="box">
+  <h4>对算力/云厂商的意义</h4>
+  <ul>
+    <li><b>主权算力是最大增量买方</b>：各主权基金/国家级云采购（中东、韩国、欧盟 gigafactory）是未来数年确定性预算，国内昇腾生态与摩尔线程等梯队应争取进入"主权 AI"国家队名单。</li>
+    <li><b>国产训练算力窗口打开</b>：DeepSeek V5 昇腾训练若能闭环，将把国内推理热拉向训练侧，对摩尔线程相对 DeepSeek 训练算力缺位是一个明确的机会缺口信号。</li>
+    <li><b>异构分解推理（prefill/decode 拆分）是架构方向</b>：韩国 R200(NPU) decode + GPU prefill 模式，与可灵类视频大模型、long-context 推理场景高度相关，值得作为技术对标。</li>
+    <li><b>算力消纳的社会许可与能源成本上抬</b>：美国数据中心社区反弹 + OpenAI 全电费承诺，提示海外扩张需把能源/社区合规成本计入报价。</li>
+  </ul>
+</div>
+
+<div class="box">
+  <h4>来源可靠度统计</h4>
+  <ul>
+    <li>高（官方/权威媒体一手）：13 条（OpenAI、NVIDIA、韩联社、Reuters、Bloomberg、ABC、POLITICO、中新社 等）</li>
+    <li>中（垂直/转述/未独立审计）：2 条（Slicast 未审计份额、The Information 转述）</li>
+    <li>低 / 待证实：0 条（未采用社交端口径来源）</li>
+  </ul>
+  <h4>完整来源清单</h4>
+  <div class="src">
+    ChainCatcher / 科创板日报 · Bloomberg · 中新社/新浪 · Slicast · Yahoo Finance/OpenAI · ABC News · The Information/alltechstocks · The Brussels Times · POLITICO · i-scoop · CNBC/alltechstocks · Yonhap/NVIDIA · Reuters/enterpriseam · The National · BizWatch Nigeria · Africa AI News
+  </div>
+</div>
+
+<p class="src dim" style="margin-top:16px">报告周期：2026-11-02 ~ 2026-11-08 · 由 Xavier 的 AI 助理自动生成 · 所有链接为真实可访问来源，未采用未经核实信源。</p>
+</div>
+</body>
+</html>
