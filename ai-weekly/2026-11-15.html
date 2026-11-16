@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 产业热点周报 · 2026-11-09 ~ 2026-11-15</title>
+<style>
+:root{color-scheme:light dark;--bg:#f7f8fa;--card:#fff;--ink:#1a1a1a;--sub:#666;--line:#e3e6ea;--accent:#2563eb;--ok:#15803d;--warn:#b45309;--bad:#b91c1c;}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1115;--card:#171a21;--ink:#e6e8eb;--sub:#9aa0aa;--line:#2a2e39;--accent:#60a5fa;--ok:#4ade80;--warn:#fbbf24;--bad:#f87171;}}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;padding:0 0 60px;}
+.wrap{max-width:820px;margin:0 auto;padding:0 16px;}
+.topnav{position:sticky;top:0;z-index:10;background:var(--card);border-bottom:1px solid var(--line);padding:12px 16px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.topnav a{color:var(--accent);text-decoration:none;font-weight:600;font-size:14px;padding:6px 12px;border:1px solid var(--accent);border-radius:20px;}
+.topnav a:hover{background:var(--accent);color:#fff;}
+h1{font-size:22px;margin:26px 0 4px;}
+.meta{color:var(--sub);font-size:13px;margin-bottom:18px;}
+h2{font-size:18px;margin:30px 0 12px;border-left:4px solid var(--accent);padding-left:10px;}
+h3{font-size:15px;margin:16px 0 8px;}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:14px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:14px 0;}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center;}
+.stat b{display:block;font-size:22px;color:var(--accent);}
+.stat span{font-size:12px;color:var(--sub);}
+.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:10px 0;}
+.tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;margin-right:6px;vertical-align:1px;}
+.r1{background:#dcfce7;color:#14532d;}.r2{background:#dbeafe;color:#1e3a8a;}.r3{background:#fef3c7;color:#78350f;}.r4{background:#fce7f3;color:#831843;}.r5{background:#ede9fe;color:#4c1d95;}.r6{background:#fee2e2;color:#7f1d1d;}
+@media (prefers-color-scheme:dark){.r1{background:#14532d;color:#bbf7d0;}.r2{background:#1e3a8a;color:#bfdbfe;}.r3{background:#78350f;color:#fde68a;}.r4{background:#831843;color:#fbcfe8;}.r5{background:#4c1d95;color:#ddd6fe;}.r6{background:#7f1d1d;color:#fecaca;}}
+.rel{font-weight:700;}.rel-high{color:var(--ok);}.rel-mid{color:var(--warn);}.rel-low{color:var(--bad);}
+.quad{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:12px 14px;margin-bottom:12px;}
+.quad .title{font-weight:700;font-size:15px;margin-bottom:4px;}
+.quad .link{font-size:12px;color:var(--accent);word-break:break-all;}
+.quad .imp{font-size:13px;margin-top:6px;}
+.quad .src{font-size:12px;color:var(--sub);margin-top:6px;}
+ul{padding-left:20px;}
+li{margin-bottom:6px;}
+a{color:var(--accent);}
+.src-list li{font-size:12.5px;color:var(--sub);word-break:break-all;}
+.sig{color:var(--accent);font-weight:700;}
+.radar li strong{color:var(--warn);}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+<a href="https://pickpikyup.github.io/ai-weekly/">← 返回 AI 周报归档</a>
+<a href="https://pickpikyup.github.io/">← 返回博客首页</a>
+</div>
+
+<div class="wrap">
+
+<h1>AI 产业热点周报</h1>
+<div class="meta">时间范围：2026-11-09（周一）— 2026-11-15（周日）· 全球 AI 产业 · 中文（专名保留英文）</div>
+
+<h2>Executive Summary</h2>
+
+<div class="grid">
+<div class="stat"><b>12</b><span>收录新闻</span></div>
+<div class="stat"><b>6</b><span>覆盖区域</span></div>
+<div class="stat"><b>8</b><span>高可靠信源</span></div>
+<div class="stat"><b>1</b><span>待证实/低可靠</span></div>
+<div class="stat"><b>4</b><span>互联网大厂动向</span></div>
+</div>
+
+<div class="box">
+<b class="sig">Top 3 信号</b>
+<ul>
+<li><b>算力供应链的「集中度」风险集中爆发</b>——NVIDIA 创始人兼 CEO Jensen Huang 于 11/12 辞任（据 NYT/NPR/AP 报道，此前涉与一名据报为中国情报机构招募的女性的关系，引发国家安全关切；公司已启动调查，黄本人承认婚内不忠）。当日股价收跌 4.3%（盘中一度跌约 14%），CFO Colette Kress 任临时 CEO，董事会任命 Harvey C. Jones 为首位董事长。GPU 巨头进入罕见的领导层空窗，「单点依赖」被摆上台面。</li>
+<li><b>AI 资产进入「分拆/独立定价」潮</b>——本周 Anthropic 启动 IPO 路演（$70–78/股、最高市值约 $1.4 万亿、超募约 6 倍），中国侧阿里平头哥公告赴港上市、百度昆仑芯与快手可灵早已递表/筹备。算力、模型、供应链同步被资本重估。</li>
+<li><b>国产大模型「集体回归」与 Agent 商业化提速</b>——BAT 同周密集出牌（百度 ERNIE 5.5 Flash Preview、阿里 Qwen4-Max、腾讯 Hy4），字节则发图像模型 Seedream 5.5；OpenAI 上线 ChatGPT Wallet 让 Agent 代付，切入 agentic commerce。</li>
+</ul>
+<b class="sig">风险雷达</b>
+<ul class="radar">
+<li><strong>市场/资本：</strong>美股 AI 板块显著回调（纳斯达克 11/5 单日跌 5.5%、后扩至整周约 -2.5 万亿市值蒸发），AI 投资回调担忧上升；Anthropic、OpenAI 估值承压。</li>
+<li><strong>供应链：</strong>NVIDIA 掌门辞任 + 中国限制连坐担忧，关键客户/供应商集中度风险放大。</li>
+<li><strong>产业生态：</strong>Anthropic/OpenAI 自研 ASIC 芯片 + TSMC 直接参股两家大客户，NVIDIA 在自有产能分配上的话语权或被稀释。</li>
+<li><strong>地缘/监管：</strong>欧盟 27 国领导人 AI 主权议题升温（都被切断对 Anthropic 顶配模型的访问权）但「7 座 AI 超级工厂 / €30B」计划仍停滞。</li>
+</ul>
+<b class="sig">宏观影响</b>
+<ul>
+<li>算力从「卖卡」转向「绑定模型股权」——TSMC/Google/NVIDIA/AMD 参加 Anthropic 基石配售，产、研、销在资本上合流。</li>
+<li>AI 从「训练比赛」转向「商业化变现」——OpenAI 季度营收已达约 $10B，ChatGPT Wallet 打开 Agent 支付通道。</li>
+<li>中国互联网大厂以「子公司独立上市 + 多线模型」对冲母公司估值倒挂，AI 资产进入资本市场的独立定价时代。</li>
+</ul>
+</div>
+
+<div class="box">
+<b class="sig">互联网大厂动向（快手/可灵排最前）</b>
+<ul>
+<li><b>快手 / 可灵 Kling：</b>赴港上市预期升温（据报道已定中金/高盛/瑞银为承销商，计划 2027 年 IPO、募资 ≥$10 亿，公司未回应，<span class="rel-mid">待证实</span>）；可灵 198 亿增资交割后 AI 资产打包定价已完成。</li>
+<li><b>字节跳动：</b>发布图像模型 Seedream 5.5（11/9），原生 RGBA 透明、100 轮编辑、2K 单张成本降至 ~¥0.28（不到上代一半），豆包/即梦/火山方舟接入。</li>
+<li><b>阿里巴巴：</b>平头哥将在港交所主板独立上市（11/10 公告），一年内第三家分拆 AI 资产的大厂；同周开放 Qwen4-Max 预览版。</li>
+<li><b>百度：</b>同日发布文心 ERNIE 5.5 Flash Preview，两项基准第一、定价激进、权重拟开源；本周「快且便宜 + 开源」连出三招。</li>
+</ul>
+</div>
+
+<h2>R1 中国</h2>
+
+<div class="quad">
+<div class="title">L3 模型 → 字节跳动发布图像模型 Seedream 5.5</div>
+<div class="link">https://ai.byteplus.com/lumina/zh/resource/seedream-5-5-release-date</div>
+<div class="imp">影响：图像生成的「可编辑性+透明素材」成为竞争点，字节把单一图生成成本打到 ¥0.28 级别，直接压低行业价格锚。</div>
+<div class="src">来源：字节跳动官方（Lumina by BytePlus）+ 快科技/DoNews · 类别：①媒体/官方 · <span class="rel rel-high">可靠度：高</span>（官方发布，多方一致）</div>
+</div>
+
+<div class="quad">
+<div class="title">L7 资本 → 阿里平头哥拟港交所独立上市</div>
+<div class="link">https://www.tmtpost.com/8204039.html</div>
+<div class="imp">影响：继百度昆仑芯、快手可灵后第三家大厂分拆 AI/芯片资产独立定价；子公司估值（250–620 亿美元测算）远超母公司市值占比，揭示「拆家上市」成为大厂回血路径。</div>
+<div class="src">来源：钛媒体/字母榜（综合阿里公告）· 类别：②媒体转述 · <span class="rel rel-high">可靠度：高</span>（基于上市公司公告）</div>
+</div>
+
+<div class="quad">
+<div class="title">L3 模型 → BAT 同周亮新模型：百度 ERNIE 5.5 Flash Preview + 阿里 Qwen4-Max，字节缺席</div>
+<div class="link">https://www.readaitime.com/news/2026-11-12/2ji9979y</div>
+<div class="imp">影响：百度「快+便宜+开源」组合与阿里「规模优先」（Qwen4-Max 输出 393K token）同日对撞，被视为 BAT 集体回归第一阵营；字节 Seed 2.1 已 142 天未更新，10 万亿参数模型仍无踪影，悬念最大。</div>
+<div class="src">来源：读懂AI时代/财联社/钛媒体（综合官方发布）· 类别：②媒体转述 · <span class="rel rel-high">可靠度：高</span>（模型为官方发布，多源交叉）</div>
+</div>
+
+<div class="quad">
+<div class="title">L7 资本 → 快手可灵 AI 赴港上市预期升温（可灵专项）</div>
+<div class="link">https://www.aoyii.com/zh/ai-daily-20261110/</div>
+<div class="imp">影响：对销售赛道的直接信号——可灵正从「烧钱做视频模型」转向资本市场独立定价；若成行将成为港股 AI 应用层标志性 IPO，其算力采购规模与国产 GPU 适配需求会被放大。</div>
+<div class="src">来源：财闻网/AO YII 报道汇总 · 类别：②媒体转述 · <span class="rel rel-mid">可靠度：中</span>（公司未官方回应，涉及承销商/时间表为传闻，部分首报于 10 月上旬）</div>
+</div>
+
+<h2>R2 美国</h2>
+
+<div class="quad">
+<div class="title">L1 算力 → NVIDIA CEO Jensen Huang 辞任，CFO Colette Kress 任临时 CEO</div>
+<div class="link">https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition</div>
+<div class="imp">影响：执掌 33 年的创始人于 11/12 立即辞去 CEO、总裁及董事职务。据 NYT/NPR/AP 报道，此前其与一名据报为中国情报机构招募的女性的关系引发国家安全关切，公司启动调查，黄本人承认婚内不忠（公司公告未说明原因）。当日股价收跌 4.3%，盘中一度跌约 14%；自 10/6 历史高点累计跌超 30%，本周市值蒸发约 5,000 亿美元。临时 CEO 为财务背景，长期战略与产能分配存在不确定性。</div>
+<div class="src">来源：NVIDIA 官方公告 + NPR/AP/CNBC/NBC · 类别：①官方/媒体 · <span class="rel rel-high">可靠度：高</span>（官方一手公告，权威媒体一致）</div>
+</div>
+
+<div class="quad">
+<div class="title">L7 资本 → Anthropic 启动 IPO 路演：$70–78/股，最高市值约 $1.4 万亿</div>
+<div class="link">https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html</div>
+<div class="imp">影响：全球最大 AI IPO 之一；825M 股募资最高 $64.35B，超额认购约 6 倍，拟 11/19 纳斯达克挂牌（代码 ANT），Google/NVIDIA/AMD 等 7 方基石配售 $26B。</div>
+<div class="src">来源：CNBC/Reuters/Fortune/TechCrunch · 类别：①媒体 · <span class="rel rel-high">可靠度：高</span>（基于 SEC 更新招股文件）</div>
+</div>
+
+<div class="quad">
+<div class="title">L3 模型 → Anthropic 发布 Claude Fable 5.2，API 降价 20%</div>
+<div class="link">https://thelatentdaily.com/tag/anthropic/</div>
+<div class="imp">影响：顶配模型降价抢企业市场；在 Artificial Analysis 智能指数 65 分居首但每任务成本也最高，国产模型（腾讯 Hy4 ¥0.78/任务）形成明显性价比反超通道。</div>
+<div class="src">来源：媒体综合报道 · 类别：②媒体转述 · <span class="rel rel-mid">可靠度：中</span>（第三方榜单 + 媒体报道）</div>
+</div>
+
+<div class="quad">
+<div class="title">L4 应用 → OpenAI 上线 ChatGPT Wallet，Agent 可代用户付款</div>
+<div class="link">https://openai.com/index/introducing-chatgpt-wallet</div>
+<div class="imp">影响：与 Amex/Mastercard/Visa 合作，用「payment token」让 dot Agent 在不接触真实卡号的前提下完成购买，首次打通 AI Agent 的支付闭环，切入 agentic commerce。</div>
+<div class="src">来源：OpenAI 官方 + CNBC · 类别：①媒体/官方 · <span class="rel rel-high">可靠度：高</span>（官方发布）</div>
+</div>
+
+<div class="quad">
+<div class="title">L7 资本 → OpenAI 季度营收约 $10B，商业化加速（The Information 报道）</div>
+<div class="link">https://thisweekinnlp.substack.com/p/this-week-in-nlp-417?action=share</div>
+<div class="imp">影响：显示前沿实验室正从「融资比赛」转向「收入支撑估值」；但运营亏损扩大，Anthropic 被指运营效率更高。</div>
+<div class="src">来源：The Information via 媒体转述 · 类别：②媒体/③社交转述 · <span class="rel rel-mid">可靠度：中</span>（单一付账媒体信源）</div>
+</div>
+
+<h2>R3 欧洲</h2>
+
+<div class="quad">
+<div class="title">L6/L7 → 欧盟 27 国领导人都柏林会议聚焦 AI 主权与监管</div>
+<div class="link">https://www.lemonde.fr/en/international/article/2026/11/14/ai-europeans-face-challenge-of-reaching-consensus-to-stay-competitive-and-improve-regulation_6780458_4.html</div>
+<div class="imp">影响：领导人讨论如何在「监管+战略自主」与「算力投入」间平衡，明确提及 6 月被美切断 Anthropic 顶配模型访问；但「7 座 AI 超级工厂 / €30B」计划仍停滞，欧洲算力主权寸步难行。</div>
+<div class="src">来源：Le Monde · 类别：①媒体 · <span class="rel rel-high">可靠度：高</span>（国际权威媒体）</div>
+</div>
+
+<h2>R4 亚太</h2>
+
+<div class="quad">
+<div class="title">L1 算力 → TSMC 批准各投 $500M 于 Anthropic 和 OpenAI</div>
+<div class="link">https://www.reuters.com/business/anthropic-ipo-raise-much-644-billion-latest-draft-prospectus-shows-2026-11-10/</div>
+<div class="imp">影响：台积电从纯代工转向直接入股两大 GPU 大客户，既是对 AI 长期需求的背书，也被认为是摆脱对 NVIDIA 单一营收依赖、抢占自研 ASIC 订单的战略动作。</div>
+<div class="src">来源：Reuters（MIAMI Herald/Yahoo 转载）· 类别：①媒体 · <span class="rel rel-high">可靠度：高</span>（董事会决议，权威媒体）</div>
+</div>
+
+<h2>R5 中东</h2>
+
+<div class="quad">
+<div class="title">L1 算力 → 沙特 NIF 与 Humain 签 $667M AI 融资（GPU 部署 + 电网基建）</div>
+<div class="link">https://www.datacenterdynamics.com/en/news/humain-raises-667m-for-ai-buildout-in-saudi-arabia/</div>
+<div class="imp">影响：阿美 49% 持股的 PIF 系 AI 公司再获注资——含 $293M GPU（约 25MW IT 负荷）与 $373M 输变电/并网，目标 1GW；是启动 NiF「AI 数据中心融资计划」的首单，中东主权资金继续加码算力+电力基础设施。</div>
+<div class="src">来源：DatacenterDynamics/经济时报 · 类别：②媒体转述 · <span class="rel rel-high">可靠度：高</span>（引 Arab News，多方一致）</div>
+</div>
+
+<h2>R6 非洲</h2>
+
+<div class="box">
+本周无重大 AI 产业动态。区域仍以依赖海外公有云与边缘手机端应用为主，未见本周内可核实的重大 AI 投资、模型发布或政策事件。
+</div>
+
+<h2>本周三大趋势</h2>
+<ul>
+<li><b>「算力供应商」集体向后端绑定：</b>TSMC/Google/NVIDIA/AMD 以基石股权深度绑定 Anthropic/OpenAI，芯片-模型-资本三线合流，抑制纯「卖卡」模式。</li>
+<li><b>AI 资产独立定价成全球现象：</b>美国 Anthropic 上市，中国「拆家上市」（平头哥/昆仑芯/可灵）并行，实验室与大厂剥离 AI 业务单独估值。</li>
+<li><b>竞争从模型转向「性价比 + 商业化」：</b>国产以低价/开源抢份额（百度、腾讯 Hy4），OpenAI 以 Agent 支付切入变现，算力成本与落地能力成为胜负手。</li>
+</ul>
+
+<div class="box">
+<b>对算力/云厂商（含摩尔线程·快手/可灵）意义</b>
+<ul>
+<li>国产大模型（文心/Qwen/混元/Seedream）密集发布 → 推理/视频生成的国产算力采购需求上台阶，可灵 4.0 长视频 + Seedream 图像模型同步拉高对 GPU 与 MUSA 生态的适配要求。</li>
+<li>Anthropic/OpenAI 自研 ASIC + TSMC 参股 → NVIDIA 单点依赖松动，正是国产 GPU 与多元供应商切入窗口；快手可灵资本化后算力采购的预算与节奏都会放大。</li>
+<li>沙特 1GW 扩产、欧盟 AI 工厂停滞 → 海外算力投资分化，中国市场与中东主权基金成为云/芯片厂商两大增量。</li>
+</ul>
+</div>
+
+<div class="box">
+<b>来源可靠度统计</b>
+<ul>
+<li>高可靠（官方一手 + 权威媒体）：8 条</li>
+<li>中可靠（行业垂直/综合转述、单一付账媒体）：4 条（其中 Anthropic Fable 5.2、OpenAI 营收为第三方/单一信源）</li>
+<li>低可靠/待证实：1 条（快手可灵赴港上市时间表，公司未回应）</li>
+</ul>
+</div>
+
+<h2>完整来源清单</h2>
+<ul class="src-list">
+<li>SEC Form 8-K (NVIDIA, nvda-20261111) — https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm</li>
+<li>NVIDIA Newsroom CEO 过渡 — https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition</li>
+<li>OpenAI 官方 ChatGPT Wallet — https://openai.com/index/introducing-chatgpt-wallet</li>
+<li>CNBC Anthropic 定价 — https://www.cnbc.com/2026/11/10/anthropic-sets-price-range-of-70-to-78-in-upcoming-ipo.html</li>
+<li>Reuters Anthropic IPO — https://www.reuters.com/business/anthropic-ipo-raise-much-644-billion-latest-draft-prospectus-shows-2026-11-10/</li>
+<li>Le Monde 欧盟 AI 峰会 — https://www.lemonde.fr/en/international/article/2026/11/14/ai-europeans-face-challenge-of-reaching-consensus-to-stay-competitive-and-improve-regulation_6780458_4.html</li>
+<li>DCD 沙特 Humain — https://www.datacenterdynamics.com/en/news/humain-raises-667m-for-ai-buildout-in-saudi-arabia/</li>
+<li>经济时报 沙特 AI 融资 — https://datacenters.economictimes.indiatimes.com/news/ai-compute-infrastructure/saudi-arabia-secures-us667-million-for-ai-power-infrastructure/135728769</li>
+<li>字节官方 Seedream 5.5 — https://ai.byteplus.com/lumina/zh/resource/seedream-5-5-release-date</li>
+<li>钛媒体·拆家上市/平头哥 — https://www.tmtpost.com/8204039.html</li>
+<li>读懂AI时代 BAT 模型 — https://www.readaitime.com/news/2026-11-12/2ji9979y</li>
+<li>财联社 BAT 报道 — https://www.cls.cn/detail/2532891</li>
+<li>AO YII AI 早报 11/10（可灵上市） — https://www.aoyii.com/zh/ai-daily-20261110/</li>
+<li>快科技 Seedream 5.5 — https://news.mydrivers.com/1/1164/1164387.htm</li>
+<li>DoNews Seedream 5.5 — https://www.donews.com/news/detail/1/6770343.html</li>
+<li>This Week in NLP #417 — https://thisweekinnlp.substack.com/p/this-week-in-nlp-417?action=share</li>
+<li>The Latent Daily（Fable 5.2） — https://thelatentdaily.com/tag/anthropic/</li>
+<li>Taiwan Plus TSMC 投资 — https://www.taiwanplus.com/news/taiwan-news/business/261111009/tsmc-approves-us1-billion-in-anthropic-and-openai-investments</li>
+</ul>
+
+</div>
+</body>
+</html>
